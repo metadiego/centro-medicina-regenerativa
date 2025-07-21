@@ -45,29 +45,30 @@ export default function NosotrosPage() {
     }
   ];
 
-  const teamMembers = [
-    {
-      name: 'Dr. Carlos Medina',
-      role: 'Director Médico',
-      specialty: 'Medicina Regenerativa',
-      experience: '15+ años de experiencia',
-      description: 'Especialista en medicina regenerativa con certificaciones internacionales en terapias avanzadas.'
-    },
-    {
-      name: 'Dra. Ana Rodríguez',
-      role: 'Especialista en Dolor',
-      specialty: 'Manejo del Dolor Crónico',
-      experience: '12+ años de experiencia',
-      description: 'Experta en tratamientos no invasivos para el manejo del dolor crónico y condiciones degenerativas.'
-    },
-    {
-      name: 'Dr. Miguel Santos',
-      role: 'Especialista en Terapias IV',
-      specialty: 'Medicina Integrativa',
-      experience: '10+ años de experiencia',
-      description: 'Pionero en sueroterapia y tratamientos de medicina integrativa en Puerto Rico.'
-    }
-  ];
+  // Team members data - currently not displayed but available for future use
+  // const teamMembers = [
+  //   {
+  //     name: 'Dr. Carlos Medina',
+  //     role: 'Director Médico',
+  //     specialty: 'Medicina Regenerativa',
+  //     experience: '15+ años de experiencia',
+  //     description: 'Especialista en medicina regenerativa con certificaciones internacionales en terapias avanzadas.'
+  //   },
+  //   {
+  //     name: 'Dra. Ana Rodríguez',
+  //     role: 'Especialista en Dolor',
+  //     specialty: 'Manejo del Dolor Crónico',
+  //     experience: '12+ años de experiencia',
+  //     description: 'Experta en tratamientos no invasivos para el manejo del dolor crónico y condiciones degenerativas.'
+  //   },
+  //   {
+  //     name: 'Dr. Miguel Santos',
+  //     role: 'Especialista en Terapias IV',
+  //     specialty: 'Medicina Integrativa',
+  //     experience: '10+ años de experiencia',
+  //     description: 'Pionero en sueroterapia y tratamientos de medicina integrativa en Puerto Rico.'
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen" style={{backgroundColor: 'rgb(247,247,247)'}}>
@@ -324,8 +325,8 @@ export default function NosotrosPage() {
                     Fundador de Adaptogenos Internacionales en Venezuela. Creador de la Unidad Médica Adaptogénica y la bebida Heat Killer.
                   </p>
                   <p>
-                    Autor de varios libros, incluyendo "Potencia tu Inteligencia Biológica y Pierde Peso", "La Revolución de los Adaptógenos en la Salud" 
-                    y "El Cáncer se Puede Curar, Fácil". Inventor con 18 patentes otorgadas en Estados Unidos, México y Rusia.
+                    Autor de varios libros, incluyendo &ldquo;Potencia tu Inteligencia Biológica y Pierde Peso&rdquo;, &ldquo;La Revolución de los Adaptógenos en la Salud&rdquo; 
+                    y &ldquo;El Cáncer se Puede Curar, Fácil&rdquo;. Inventor con 18 patentes otorgadas en Estados Unidos, México y Rusia.
                   </p>
                   <p>
                     Consultor científico para revistas prestigiosas como Discovery Health y Evidence-Based Complementary and Alternative Medicine (eCAM).
@@ -349,20 +350,20 @@ export default function NosotrosPage() {
                 </div>
                 <div className="text-gray-600 leading-relaxed font-light text-sm space-y-3">
                   <p>
-                    "Hubo un momento en mi vida en el que enfrenté desafíos que me hicieron replantear quién era y hacia dónde quería ir. 
-                    La salud, el estrés y la falta de propósito me llevaron a tocar fondo, pero también me dieron la fuerza para transformarme."
+                    &ldquo;Hubo un momento en mi vida en el que enfrenté desafíos que me hicieron replantear quién era y hacia dónde quería ir. 
+                    La salud, el estrés y la falta de propósito me llevaron a tocar fondo, pero también me dieron la fuerza para transformarme.&rdquo;
                   </p>
                   <p>
-                    "Decidí que quería ser más que una espectadora de mi propia vida; quería tomar el control, aprender a cuidarme desde el interior 
-                    y convertir esas lecciones en herramientas para ayudar a otros."
+                    &ldquo;Decidí que quería ser más que una espectadora de mi propia vida; quería tomar el control, aprender a cuidarme desde el interior 
+                    y convertir esas lecciones en herramientas para ayudar a otros.&rdquo;
                   </p>
                   <p>
-                    "Mi filosofía se basa en el equilibrio: cuidar el cuerpo, nutrir el alma y mantener una mentalidad positiva. 
-                    Creo firmemente que la salud integral comienza con pequeños cambios conscientes que generan grandes transformaciones."
+                    &ldquo;Mi filosofía se basa en el equilibrio: cuidar el cuerpo, nutrir el alma y mantener una mentalidad positiva. 
+                    Creo firmemente que la salud integral comienza con pequeños cambios conscientes que generan grandes transformaciones.&rdquo;
                   </p>
                   <p>
-                    "Mi misión es inspirar a otros a creer en ellos mismos, a encontrar su propósito y a convertirse en su mejor versión, 
-                    viviendo una vida plena, saludable y con intención. Porque todos merecemos ser protagonistas de nuestras propias vidas."
+                    &ldquo;Mi misión es inspirar a otros a creer en ellos mismos, a encontrar su propósito y a convertirse en su mejor versión, 
+                    viviendo una vida plena, saludable y con intención. Porque todos merecemos ser protagonistas de nuestras propias vidas.&rdquo;
                   </p>
                 </div>
               </div>

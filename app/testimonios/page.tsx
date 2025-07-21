@@ -121,7 +121,7 @@ export default function TestimoniosPage() {
                   </div>
 
                   <p className="text-gray-700 mb-8 italic leading-relaxed text-lg font-light">
-                    "{testimonial.text}"
+                    &ldquo;{testimonial.text}&rdquo;
                   </p>
 
                   <div className="border-t border-gray-100 pt-6">
