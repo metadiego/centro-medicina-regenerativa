@@ -93,13 +93,19 @@ export default function ContactoPage() {
                 <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-3">Ubicación</h3>
-                <p className="text-gray-600 text-lg mb-4">
-                  Centro de Medicina Regenerativa<br />
-                  San Juan, Puerto Rico
-                </p>
+                <h3 className="text-xl font-medium text-gray-900 mb-3">Ubicaciones</h3>
+                <div className="space-y-4 text-gray-600 text-sm mb-4">
+                  <div>
+                    <p className="font-medium text-gray-700 mb-1">Bayamón</p>
+                    <p>51 Calle Dr. Santiago Veve<br />Bayamón, PR 00961</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-700 mb-1">Caguas</p>
+                    <p>Av. Luis Muñoz Marín<br />Caguas, PR 00725</p>
+                  </div>
+                </div>
                 <p className="text-gray-500 text-sm">
-                  Visítanos en nuestras modernas instalaciones
+                  Visítanos en cualquiera de nuestras modernas instalaciones
                 </p>
               </div>
             </div>
@@ -263,7 +269,7 @@ export default function ContactoPage() {
                     Nuestro equipo está listo para atenderte y resolver todas tus dudas
                   </p>
                   <Link 
-                    href="tel:+17871234567"
+                    href="tel:+17877807575"
                     className="inline-flex items-center justify-center w-full bg-white text-cyan-600 font-medium py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200"
                   >
                     <Phone className="w-5 h-5 mr-2" />

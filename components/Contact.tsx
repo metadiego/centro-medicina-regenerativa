@@ -74,13 +74,22 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-6">
+              <div className="flex items-start space-x-6">
                 <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg">
                   <MapPin className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900 text-lg mb-1">Ubicación</h4>
-                  <p className="text-gray-600 text-lg">Centro de Medicina Regenerativa<br />Puerto Rico, USA</p>
+                  <h4 className="font-medium text-gray-900 text-lg mb-3">Ubicaciones</h4>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="font-medium text-gray-800 text-base mb-1">Bayamón</p>
+                      <p className="text-gray-600">51 Calle Dr. Santiago Veve<br />Bayamón, PR 00961</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-gray-800 text-base mb-1">Caguas</p>
+                      <p className="text-gray-600">Av. Luis Muñoz Marín<br />Caguas, PR 00725</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
