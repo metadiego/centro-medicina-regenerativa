@@ -312,7 +312,7 @@ export default function NosotrosPage() {
                   </div>
                   <h3 className="text-2xl font-medium text-gray-900 mb-2">Jose Olalde</h3>
                   <p className="text-cyan-600 font-medium mb-4 text-lg">Presidente</p>
-                  <p className="text-orange-600 font-medium mb-6">Creador de la Teoría y Medicina Sistémica</p>
+                  <p className="text-orange-600 font-medium mb-6">Co-fundador y Creador de la Teoría y Medicina Sistémica</p>
                 </div>
                 <div className="text-gray-600 leading-relaxed font-light text-sm space-y-3">
                   <p>
