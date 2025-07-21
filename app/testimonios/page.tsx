@@ -153,7 +153,7 @@ export default function TestimoniosPage() {
             
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="p-8">
-                <div className="text-4xl font-light text-cyan-600 mb-2">1000+</div>
+                <div className="text-4xl font-light text-cyan-600 mb-2">10,000+</div>
                 <div className="text-gray-700 font-medium">Pacientes Satisfechos</div>
               </div>
               <div className="p-8">
@@ -161,8 +161,8 @@ export default function TestimoniosPage() {
                 <div className="text-gray-700 font-medium">Tasa de Satisfacción</div>
               </div>
               <div className="p-8">
-                <div className="text-4xl font-light text-cyan-600 mb-2">10+</div>
-                <div className="text-gray-700 font-medium">Años de Experiencia</div>
+                <div className="text-4xl font-light text-cyan-600 mb-2">20+</div>
+                <div className="text-gray-700 font-medium">Años Sirviendo a Puerto Rico</div>
               </div>
             </div>
           </div>
@@ -175,7 +175,7 @@ export default function TestimoniosPage() {
               ¿Listo para ser nuestro próximo <span className="font-medium text-cyan-600">testimonio</span>?
             </h2>
             <p className="text-xl text-gray-600 mb-8 font-light">
-              Únete a los cientos de pacientes que han transformado su salud con CMR
+              Únete a los miles de pacientes que han transformado su salud con CMR
             </p>
             <Link 
               href="/contacto" 

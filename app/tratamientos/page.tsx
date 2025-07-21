@@ -154,7 +154,7 @@ export default function TratamientosPage() {
       ],
       duration: '90-120 min',
       sessions: '20-60 sesiones (según condición)',
-      category: 'Medicina Hiperbárica'
+      category: 'Medicina Regenerativa'
     },
     {
       id: 8,
@@ -170,7 +170,7 @@ export default function TratamientosPage() {
       ],
       duration: '20-30 min',
       sessions: '8-15 sesiones',
-      category: 'Terapia Energética'
+      category: 'Medicina Regenerativa'
     },
     {
       id: 9,
