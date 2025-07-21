@@ -14,14 +14,14 @@ export default function Services() {
     {
       image: '/stem_cell_therapy.png',
       imageType: 'file',
-      title: 'Terapia Células Madre',
+      title: 'Terapia de Células Madre',
       description: 'Tratamientos regenerativos utilizando células madre para la reparación y regeneración de tejidos dañados.',
       features: ['Medicina regenerativa', 'Células madre', 'Reparación tisular']
     },
     {
       image: '/iv_laser.png',
       imageType: 'file',
-      title: 'Terapia Láser Intravenoso',
+      title: 'Sueroterapia Laser',
       description: 'Terapia láser de última generación aplicada por vía intravenosa para mejorar la circulación y oxigenación.',
       features: ['Láser avanzado', 'Mejora circulación', 'Oxigenación celular']
     }

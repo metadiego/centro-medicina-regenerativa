@@ -42,22 +42,40 @@ export default function TratamientosPage() {
     {
       id: 1,
       title: 'Terapia de Dolor y Recuperación',
-      shortDescription: 'Tratamiento para el dolor e inflamación con tecnología de ondas láser.',
-      fullDescription: 'Utilizamos tecnología avanzada de ondas láser para tratar eficazmente el dolor crónico y la inflamación. Este tratamiento no invasivo estimula la regeneración celular y acelera el proceso de curación natural del cuerpo.',
+      shortDescription: 'Terapia MLS (Sistema Multionda Sincronizado) que combina dos longitudes de onda láser para máxima eficacia terapéutica.',
+      fullDescription: 'La terapia MLS utiliza tecnología patentada aprobada por la FDA que sincroniza emisiones continuas y pulsadas de 808nm (antiinflamatorio) y 905nm (analgésico). Esta sinergia energética produce efectos superiores de alivio del dolor y reducción de inflamación que cualquier longitud de onda por separado, mediante fotobiomodulación que estimula el citocromo c oxidasa mitocondrial, aumenta la producción de ATP y libera endorfinas naturales.',
       benefits: [
-        'Reducción significativa del dolor',
-        'Disminución de la inflamación',
-        'Aceleración del proceso de curación',
-        'Tratamiento no invasivo',
-        'Sin efectos secundarios'
+        '85-90% de eficacia en alivio del dolor',
+        'Bloqueo de señales de dolor al cerebro',
+        'Liberación de endorfinas y encefalinas naturales',
+        'Reducción significativa de inflamación y edema',
+        'Aceleración de regeneración celular',
+        'Sin riesgo térmico ni efectos secundarios'
       ],
-      duration: '30-45 min',
+      duration: '45-60 min',
       sessions: '6-12 sesiones',
       category: 'Dolor y Recuperación'
     },
     {
       id: 2,
-      title: 'Sueroterapia Láser',
+      title: 'Terapia de Células Madre',
+      shortDescription: 'Tratamiento innovador con células madre autólogas extraídas del propio cuerpo del paciente.',
+      fullDescription: 'Aplicamos una terapia innovadora de células madre basada en células madre autólogas extraídas del propio cuerpo del paciente. Es el tratamiento de células madre legal más avanzado en Estados Unidos, utilizando las propias células regenerativas del paciente para promover la curación natural y la regeneración tisular sin riesgo de rechazo inmunológico.',
+      benefits: [
+        'Uso de células madre del propio paciente',
+        'Sin riesgo de rechazo inmunológico',
+        'Tratamiento legal más avanzado en EE.UU.',
+        'Regeneración natural de tejidos dañados',
+        'Estimulación de procesos de curación propios',
+        'Terapia personalizada e individualizada'
+      ],
+      duration: '60-90 min',
+      sessions: '1-3 aplicaciones (según caso)',
+      category: 'Medicina Regenerativa'
+    },
+    {
+      id: 3,
+      title: 'Sueroterapia',
       shortDescription: 'Aplicación de vitaminas y medicinas naturales que aportan grandes beneficios a tu salud.',
       fullDescription: 'La sueroterapia es un tratamiento que consiste en la aplicación intravenosa de vitaminas, minerales y medicinas naturales. Este método permite una absorción del 100% de los nutrientes, proporcionando beneficios inmediatos para tu salud y bienestar.',
       benefits: [
@@ -72,39 +90,41 @@ export default function TratamientosPage() {
       category: 'Bienestar General'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Terapia Disfunción Eréctil',
-      shortDescription: 'APEX by InMode es un tratamiento clínico avanzado que estimula el flujo sanguíneo, fortalece los músculos pélvicos y mejora la función eréctil.',
-      fullDescription: 'APEX by InMode utiliza tecnología electromagnética enfocada de alta intensidad (HIFEM) para estimular contracciones musculares supramáximas en los músculos del suelo pélvico. Este tratamiento revolucionario mejora significativamente la función eréctil de manera natural y no invasiva.',
+      shortDescription: 'APEX by InMode utiliza tecnología de radiofrecuencia avanzada para restaurar la función eréctil de manera no invasiva.',
+      fullDescription: 'APEX by InMode emplea radiofrecuencia bipolar inteligente que estimula dos procesos clave: la angiogénesis (formación de nuevos vasos sanguíneos) y la neocolagénesis (producción de colágeno). Este tratamiento mejora la circulación sanguínea en el tejido peniano y fortalece las estructuras que sostienen la función eréctil, ofreciendo una solución revolucionaria y completamente no quirúrgica.',
       benefits: [
-        'Mejora de la función eréctil',
-        'Fortalecimiento de músculos pélvicos',
-        'Estimulación del flujo sanguíneo',
-        'Tratamiento no invasivo',
-        'Resultados duraderos'
+        'Estimulación de nuevos vasos sanguíneos',
+        'Mejora de la circulación local',
+        'Fortalecimiento del tejido mediante colágeno',
+        'Aumento de la rigidez y durabilidad',
+        'Tratamiento completamente no invasivo',
+        'Sin tiempo de recuperación'
       ],
-      duration: '30 min',
+      duration: '20-30 min',
       sessions: '6-8 sesiones',
       category: 'Salud Masculina'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Terapia Íntima Femenina',
-      shortDescription: 'Empower por InMode es una plataforma médica innovadora que ofrece tratamientos seguros, efectivos y no invasivos.',
-      fullDescription: 'Empower por InMode combina tecnología electromagnética (HIFEM) y radiofrecuencia para fortalecer los músculos del suelo pélvico y mejorar la salud íntima femenina. Este tratamiento revolucionario aborda múltiples preocupaciones de la salud íntima de manera segura y efectiva.',
+      shortDescription: 'EmpowerRF por InMode combina radiofrecuencia y estimulación muscular eléctrica para el bienestar íntimo femenino integral.',
+      fullDescription: 'EmpowerRF utiliza múltiples modalidades energéticas complementarias: estimulación muscular eléctrica intravaginal (EMS), radiofrecuencia fraccionada sub-epitelial y radiofrecuencia bipolar. Esta tecnología FDA-aprobada estimula la producción de colágeno, fortalece el suelo pélvico, mejora la circulación sanguínea vaginal y restaura la salud íntima femenina de manera completamente no invasiva.',
       benefits: [
+        'Reducción de incontinencia urinaria',
+        'Mejora de sequedad vaginal y lubricación',
         'Fortalecimiento del suelo pélvico',
-        'Mejora de la incontinencia urinaria',
-        'Aumento de la sensibilidad íntima',
-        'Tratamiento no invasivo',
-        'Recuperación inmediata'
+        'Aumento de sensibilidad y función íntima',
+        'Estimulación de producción de colágeno',
+        'Tratamiento sin tiempo de recuperación'
       ],
-      duration: '30 min',
-      sessions: '6-8 sesiones',
+      duration: '20-30 min',
+      sessions: '3 sesiones (1 mes de separación)',
       category: 'Salud Femenina'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Terapia PEMF',
       shortDescription: 'El futuro del alivio del dolor - Ejercicio Celular Inducido Magnéticamente.',
       fullDescription: 'La Terapia de Campo Electromagnético Pulsado (PEMF) representa el futuro del alivio del dolor. Utiliza campos electromagnéticos pulsados para estimular la función celular, mejorando la circulación, reduciendo la inflamación y acelerando la curación natural del cuerpo.',
@@ -120,23 +140,24 @@ export default function TratamientosPage() {
       category: 'Medicina Regenerativa'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Cámara Hiperbárica',
-      shortDescription: 'Tratamientos con la cámara hiperbárica de oxígeno, conoce los beneficios que aporta a la salud.',
-      fullDescription: 'La terapia de oxígeno hiperbárico administra oxígeno puro al 100% en un ambiente presurizado. Este tratamiento aumenta significativamente los niveles de oxígeno en la sangre, promoviendo la curación acelerada, la regeneración celular y múltiples beneficios para la salud.',
+      shortDescription: 'Terapia de oxígeno hiperbárico (HBOT) que administra oxígeno puro al 100% bajo presión atmosférica aumentada.',
+      fullDescription: 'La terapia de oxígeno hiperbárico utiliza cámaras presurizadas a 2-3 atmósferas donde el paciente respira oxígeno puro al 100%. Esta presión aumentada permite que el plasma sanguíneo transporte hasta 20 veces más oxígeno disuelto, saturando completamente la hemoglobina y creando hiperoxemia e hiperoxia tisular. El tratamiento estimula la angiogénesis, formación de colágeno, crecimiento de nuevos vasos sanguíneos y produce efectos antimicrobianos e inmunomoduladores.',
       benefits: [
-        'Aceleración de la curación',
-        'Mejora de la oxigenación tisular',
-        'Estimulación de la angiogénesis',
-        'Fortalecimiento del sistema inmunológico',
-        'Reducción de la inflamación'
+        'Saturación completa de hemoglobina y plasma',
+        'Estimulación del factor de crecimiento endotelial',
+        'Formación acelerada de colágeno y piel nueva',
+        'Propiedades antimicrobianas e inmunomoduladoras',
+        'Tratamiento FDA-aprobado para múltiples condiciones',
+        'Mejora significativa en curación de heridas'
       ],
-      duration: '60-90 min',
-      sessions: '20-40 sesiones',
+      duration: '90-120 min',
+      sessions: '20-60 sesiones (según condición)',
       category: 'Medicina Hiperbárica'
     },
     {
-      id: 7,
+      id: 8,
       title: 'Cámara Energética',
       shortDescription: 'Alivio del dolor, relajación, mejora de la circulación y reducción de la inflamación.',
       fullDescription: 'La cámara energética utiliza campos electromagnéticos de baja frecuencia para estimular los procesos naturales de curación del cuerpo. Esta terapia avanzada proporciona alivio del dolor, mejora la circulación sanguínea y promueve la relajación profunda.',
@@ -152,7 +173,7 @@ export default function TratamientosPage() {
       category: 'Terapia Energética'
     },
     {
-      id: 8,
+      id: 9,
       title: 'NeuroCatch',
       shortDescription: 'Herramienta neurodiagnóstica que mide objetivamente las mejoras neurológicas en pacientes.',
       fullDescription: 'NeuroCatch es una innovadora herramienta de neurodiagnóstico que utiliza electroencefalografía (EEG) para medir objetivamente la función cerebral y monitorear las mejoras neurológicas. Esta tecnología avanzada permite evaluar y seguir el progreso de tratamientos neurológicos de manera precisa.',
@@ -166,6 +187,23 @@ export default function TratamientosPage() {
       duration: '15-20 min',
       sessions: 'Según evaluación',
       category: 'Neurodiagnóstico'
+    },
+    {
+      id: 10,
+      title: 'Terapia Circulatoria AVACEN',
+      shortDescription: 'Terapia térmica avanzada que mejora la microcirculación utilizando las arterias arteriovenosas de la palma como portal.',
+      fullDescription: 'La terapia AVACEN (Mejoramiento Avanzado de Circulación Vascular) es un dispositivo médico Clase II aprobado por la FDA que combina calor controlado y presión negativa aplicados en la palma de la mano. Esta tecnología patentada utiliza las anastomosis arteriovenosas (AVAs) de la palma como portal para infundir calor al sistema circulatorio, reduciendo la viscosidad sanguínea y mejorando la microcirculación hasta 1,000 veces más que los capilares normales.',
+      benefits: [
+        'Alivio temporal de dolor muscular y articular',
+        'Mejora significativa de la microcirculación',
+        'Reducción de la viscosidad sanguínea',
+        'Optimización del suministro de oxígeno',
+        'Tratamiento no invasivo libre de medicamentos',
+        'Más de 25 millones de tratamientos seguros realizados'
+      ],
+      duration: '20-30 min',
+      sessions: 'Según necesidad del paciente',
+      category: 'Salud Circulatoria'
     }
   ];
 
@@ -329,50 +367,64 @@ export default function TratamientosPage() {
                             />
                           ) : treatment.id === 2 ? (
                             <Image 
+                              src="/stem_cell_therapy.png" 
+                              alt="Terapia Células Madre" 
+                              fill 
+                              className="object-cover rounded-2xl" 
+                            />
+                          ) : treatment.id === 3 ? (
+                            <Image 
                               src="/iv_laser.png" 
                               alt="Sueroterapia IV" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
-                          ) : treatment.id === 3 ? (
+                          ) : treatment.id === 4 ? (
                             <Image 
                               src="/erectile_dysfunction.png" 
                               alt="Terapia Disfunción Eréctil" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
-                          ) : treatment.id === 4 ? (
+                          ) : treatment.id === 5 ? (
                             <Image 
                               src="/femenine.png" 
                               alt="Terapia Íntima Femenina" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
-                          ) : treatment.id === 5 ? (
+                          ) : treatment.id === 6 ? (
                             <Image 
                               src="/pemf.png" 
                               alt="Terapia PEMF" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
-                          ) : treatment.id === 6 ? (
+                          ) : treatment.id === 7 ? (
                             <Image 
                               src="/camara_hiperbarica.png" 
                               alt="Cámara Hiperbárica" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
-                          ) : treatment.id === 7 ? (
+                          ) : treatment.id === 8 ? (
                             <Image 
                               src="/camara_energetica.png" 
                               alt="Cámara Energética" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
-                          ) : treatment.id === 8 ? (
+                          ) : treatment.id === 9 ? (
                             <Image 
                               src="/neurocatch.png" 
                               alt="NeuroCatch" 
+                              fill 
+                              className="object-cover rounded-2xl" 
+                            />
+                          ) : treatment.id === 10 ? (
+                            <Image 
+                              src="/terapia_circulatoria.png" 
+                              alt="Terapia Circulatoria AVACEN" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />

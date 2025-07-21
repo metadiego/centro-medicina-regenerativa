@@ -177,6 +177,7 @@ export default function ContactoPage() {
                       >
                         <option value="">Selecciona un tratamiento</option>
                         <option value="terapia-dolor">Terapia del Dolor</option>
+                        <option value="terapia-celulas-madre">Terapia Células Madre</option>
                         <option value="sueroterapia">Sueroterapia</option>
                         <option value="camara-energetica">Cámara Energética</option>
                         <option value="terapia-circulatoria">Terapia Circulatoria</option>
