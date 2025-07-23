@@ -1,6 +1,7 @@
 'use client';
 
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { ArrowLeft, Clock, Users, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,7 +12,7 @@ export default function TratamientosPage() {
       id: 0,
       title: 'Medicina Regenerativa',
       shortDescription: 'Técnicas avanzadas para tratar enfermedades del envejecimiento y condiciones musculoesqueléticas.',
-      fullDescription: 'Aplicamos técnicas innovadoras para el manejo de lesiones, inflamación y problemas musculoesqueléticos, así como condiciones crónicas relacionadas con el envejecimiento.',
+      fullDescription: 'Aplicamos técnicas innovadoras para el manejo de lesiones musculoesqueléticas y condiciones crónicas relacionadas con el envejecimiento. Combinamos medicina moderna con enfoques naturales para promover la regeneración y curación integral del cuerpo.',
       benefits: [
         'Tratamiento de lesiones musculoesqueléticas',
         'Manejo integral de condiciones crónicas',
@@ -43,7 +44,7 @@ export default function TratamientosPage() {
       id: 1,
       title: 'Terapia de Dolor y Recuperación',
       shortDescription: 'Terapia MLS (Sistema Multionda Sincronizado) que combina dos longitudes de onda láser para máxima eficacia terapéutica.',
-      fullDescription: 'La terapia MLS utiliza tecnología patentada aprobada por la FDA que sincroniza emisiones continuas y pulsadas de 808nm (antiinflamatorio) y 905nm (analgésico). Esta sinergia energética produce efectos superiores de alivio del dolor y reducción de inflamación que cualquier longitud de onda por separado, mediante fotobiomodulación que estimula el citocromo c oxidasa mitocondrial, aumenta la producción de ATP y libera endorfinas naturales.',
+      fullDescription: 'La terapia MLS utiliza tecnología láser patentada aprobada por la FDA que sincroniza dos longitudes de onda para máxima eficacia terapéutica. Esta tecnología produce efectos superiores de alivio del dolor y reducción de inflamación mediante fotobiomodulación avanzada.',
       benefits: [
         '85-90% de eficacia en alivio del dolor',
         'Bloqueo de señales de dolor al cerebro',
@@ -60,7 +61,7 @@ export default function TratamientosPage() {
       id: 2,
       title: 'Terapia de Células Madre',
       shortDescription: 'Tratamiento innovador con células madre autólogas extraídas del propio cuerpo del paciente.',
-      fullDescription: 'Aplicamos una terapia innovadora de células madre basada en células madre autólogas extraídas del propio cuerpo del paciente. Es el tratamiento de células madre legal más avanzado en Estados Unidos, utilizando las propias células regenerativas del paciente para promover la curación natural y la regeneración tisular sin riesgo de rechazo inmunológico.',
+      fullDescription: 'Terapia innovadora que utiliza células madre autólogas extraídas del propio cuerpo del paciente. Es el tratamiento de células madre legal más avanzado en Estados Unidos, promoviendo la curación natural sin riesgo de rechazo inmunológico.',
       benefits: [
         'Uso de células madre del propio paciente',
         'Sin riesgo de rechazo inmunológico',
@@ -77,7 +78,7 @@ export default function TratamientosPage() {
       id: 3,
       title: 'Sueroterapia',
       shortDescription: 'Aplicación de vitaminas y medicinas naturales que aportan grandes beneficios a tu salud.',
-      fullDescription: 'La sueroterapia es un tratamiento que consiste en la aplicación intravenosa de vitaminas, minerales y medicinas naturales. Este método permite una absorción del 100% de los nutrientes, proporcionando beneficios inmediatos para tu salud y bienestar.',
+      fullDescription: 'Tratamiento intravenoso de vitaminas, minerales y medicinas naturales con absorción del 100%. Proporciona beneficios inmediatos para la salud y bienestar general del paciente.',
       benefits: [
         'Hidratación profunda',
         'Absorción 100% de nutrientes',
@@ -93,7 +94,7 @@ export default function TratamientosPage() {
       id: 4,
       title: 'Terapia Disfunción Eréctil',
       shortDescription: 'APEX by InMode utiliza tecnología de radiofrecuencia avanzada para restaurar la función eréctil de manera no invasiva.',
-      fullDescription: 'APEX by InMode emplea radiofrecuencia bipolar inteligente que estimula dos procesos clave: la angiogénesis (formación de nuevos vasos sanguíneos) y la neocolagénesis (producción de colágeno). Este tratamiento mejora la circulación sanguínea en el tejido peniano y fortalece las estructuras que sostienen la función eréctil, ofreciendo una solución revolucionaria y completamente no quirúrgica.',
+      fullDescription: 'APEX by InMode utiliza radiofrecuencia bipolar inteligente para estimular la formación de nuevos vasos sanguíneos y producción de colágeno. Mejora la circulación sanguínea y fortalece las estructuras que sostienen la función eréctil de manera completamente no invasiva.',
       benefits: [
         'Estimulación de nuevos vasos sanguíneos',
         'Mejora de la circulación local',
@@ -110,7 +111,7 @@ export default function TratamientosPage() {
       id: 5,
       title: 'Terapia Íntima Femenina',
       shortDescription: 'EmpowerRF por InMode combina radiofrecuencia y estimulación muscular eléctrica para el bienestar íntimo femenino integral.',
-      fullDescription: 'EmpowerRF utiliza múltiples modalidades energéticas complementarias: estimulación muscular eléctrica intravaginal (EMS), radiofrecuencia fraccionada sub-epitelial y radiofrecuencia bipolar. Esta tecnología FDA-aprobada estimula la producción de colágeno, fortalece el suelo pélvico, mejora la circulación sanguínea vaginal y restaura la salud íntima femenina de manera completamente no invasiva.',
+      fullDescription: 'EmpowerRF combina estimulación muscular eléctrica y radiofrecuencia para el bienestar íntimo femenino integral. Esta tecnología FDA-aprobada estimula la producción de colágeno, fortalece el suelo pélvico y restaura la salud íntima de manera no invasiva.',
       benefits: [
         'Reducción de incontinencia urinaria',
         'Mejora de sequedad vaginal y lubricación',
@@ -127,7 +128,7 @@ export default function TratamientosPage() {
       id: 6,
       title: 'Terapia PEMF',
       shortDescription: 'El futuro del alivio del dolor - Ejercicio Celular Inducido Magnéticamente.',
-      fullDescription: 'La Terapia de Campo Electromagnético Pulsado (PEMF) representa el futuro del alivio del dolor. Utiliza campos electromagnéticos pulsados para estimular la función celular, mejorando la circulación, reduciendo la inflamación y acelerando la curación natural del cuerpo.',
+      fullDescription: 'La Terapia PEMF utiliza campos electromagnéticos pulsados para estimular la función celular y promover la curación natural. Mejora la circulación, reduce la inflamación y acelera los procesos de regeneración del cuerpo.',
       benefits: [
         'Alivio efectivo del dolor',
         'Estimulación de la regeneración celular',
@@ -142,15 +143,19 @@ export default function TratamientosPage() {
     {
       id: 7,
       title: 'Cámara Hiperbárica',
-      shortDescription: 'Terapia de oxígeno hiperbárico (HBOT) que administra oxígeno puro al 100% bajo presión atmosférica aumentada.',
-      fullDescription: 'La terapia de oxígeno hiperbárico utiliza cámaras presurizadas a 2-3 atmósferas donde el paciente respira oxígeno puro al 100%. Esta presión aumentada permite que el plasma sanguíneo transporte hasta 20 veces más oxígeno disuelto, saturando completamente la hemoglobina y creando hiperoxemia e hiperoxia tisular. El tratamiento estimula la angiogénesis, formación de colágeno, crecimiento de nuevos vasos sanguíneos y produce efectos antimicrobianos e inmunomoduladores.',
+      shortDescription: 'Terapia hiperbárica de oxígeno (THO) a 1.3 atmósferas que permite respirar oxígeno puro en ambiente presurizado.',
+      fullDescription: 'Terapia que utiliza una cámara presurizada a 1.3 atmósferas donde el paciente respira oxígeno puro. Esta mayor oxigenación promueve la curación acelerada, reduce la inflamación y estimula procesos regenerativos naturales del cuerpo.',
       benefits: [
-        'Saturación completa de hemoglobina y plasma',
-        'Estimulación del factor de crecimiento endotelial',
-        'Formación acelerada de colágeno y piel nueva',
-        'Propiedades antimicrobianas e inmunomoduladoras',
-        'Tratamiento FDA-aprobado para múltiples condiciones',
-        'Mejora significativa en curación de heridas'
+        'Mejora acelerada en la cicatrización de heridas',
+        'Reducción significativa de la inflamación',
+        'Fortalecimiento de la respuesta inmune',
+        'Aumento del flujo sanguíneo y oxigenación tisular',
+        'Recuperación más rápida de lesiones y fracturas',
+        'Beneficios neurológicos y mejora cognitiva',
+        'Mayor energía y resistencia',
+        'Mejora del sueño y reducción del estrés',
+        'Efectos anti-envejecimiento y desintoxicación',
+        'Alivio de dolores e hinchazón'
       ],
       duration: '90-120 min',
       sessions: '20-60 sesiones (según condición)',
@@ -160,7 +165,7 @@ export default function TratamientosPage() {
       id: 8,
       title: 'Cámara Energética',
       shortDescription: 'Alivio del dolor, relajación, mejora de la circulación y reducción de la inflamación.',
-      fullDescription: 'La cámara energética utiliza campos electromagnéticos de baja frecuencia para estimular los procesos naturales de curación del cuerpo. Esta terapia avanzada proporciona alivio del dolor, mejora la circulación sanguínea y promueve la relajación profunda.',
+      fullDescription: 'Utiliza campos electromagnéticos de baja frecuencia para estimular los procesos naturales de curación del cuerpo. Proporciona alivio del dolor, mejora la circulación sanguínea y promueve la relajación profunda.',
       benefits: [
         'Alivio efectivo del dolor',
         'Relajación profunda',
@@ -176,7 +181,7 @@ export default function TratamientosPage() {
       id: 9,
       title: 'NeuroCatch',
       shortDescription: 'Herramienta neurodiagnóstica que mide objetivamente las mejoras neurológicas en pacientes.',
-      fullDescription: 'NeuroCatch es una innovadora herramienta de neurodiagnóstico que utiliza electroencefalografía (EEG) para medir objetivamente la función cerebral y monitorear las mejoras neurológicas. Esta tecnología avanzada permite evaluar y seguir el progreso de tratamientos neurológicos de manera precisa.',
+      fullDescription: 'Herramienta innovadora de neurodiagnóstico que utiliza electroencefalografía (EEG) para medir objetivamente la función cerebral. Permite evaluar y monitorear el progreso de tratamientos neurológicos de manera precisa y confiable.',
       benefits: [
         'Evaluación objetiva de la función cerebral',
         'Monitoreo preciso del progreso',
@@ -192,7 +197,7 @@ export default function TratamientosPage() {
       id: 10,
       title: 'Terapia Circulatoria AVACEN',
       shortDescription: 'Terapia térmica avanzada que mejora la microcirculación utilizando las arterias arteriovenosas de la palma como portal.',
-      fullDescription: 'La terapia AVACEN (Mejoramiento Avanzado de Circulación Vascular) es un dispositivo médico Clase II aprobado por la FDA que combina calor controlado y presión negativa aplicados en la palma de la mano. Esta tecnología patentada utiliza las anastomosis arteriovenosas (AVAs) de la palma como portal para infundir calor al sistema circulatorio, reduciendo la viscosidad sanguínea y mejorando la microcirculación hasta 1,000 veces más que los capilares normales.',
+      fullDescription: 'Dispositivo médico Clase II aprobado por la FDA que combina calor controlado y presión negativa aplicados en la palma de la mano. Utiliza las arterias arteriovenosas de la palma para mejorar la microcirculación y reducir la viscosidad sanguínea de manera segura.',
       benefits: [
         'Alivio temporal de dolor muscular y articular',
         'Mejora significativa de la microcirculación',
@@ -204,6 +209,40 @@ export default function TratamientosPage() {
       duration: '20-30 min',
       sessions: 'Según necesidad del paciente',
       category: 'Salud Circulatoria'
+    },
+    {
+      id: 11,
+      title: 'Terapia Neurológica Láser',
+      shortDescription: 'Casco ED Weber con 320 LED infrarrojos de 50 mW cada uno para estimular y optimizar la función cerebral.',
+      fullDescription: 'El casco ED Weber está equipado con 320 LED infrarrojos de 50 mW cada uno para estimular la función cerebral. Esta tecnología de fototerapia infrarroja penetra profundamente en el tejido cerebral para mejorar la microcirculación y optimizar la función neurológica de manera no invasiva.',
+      benefits: [
+        'Estimulación de la microcirculación cerebral',
+        'Apoyo a los procesos cerebrales naturales',
+        'Recarga y optimización de la función neurológica',
+        'Penetración profunda de luz infrarroja',
+        'Tratamiento completamente no invasivo',
+        'Configuraciones personalizables de duración e intensidad'
+      ],
+      duration: '20-30 min',
+      sessions: 'Uso diario recomendado',
+      category: 'Neurología'
+    },
+    {
+      id: 12,
+      title: 'Terapia de Biorresonancia',
+      shortDescription: 'Tratamiento basado en la física cuántica que detecta y neutraliza frecuencias electromagnéticas desequilibradas del cuerpo.',
+      fullDescription: 'Terapia basada en la física cuántica que detecta y corrige frecuencias electromagnéticas desequilibradas en el cuerpo. Mediante electrodos especializados, el dispositivo analiza y revierte las frecuencias disarmónicas para restaurar el equilibrio energético natural.',
+      benefits: [
+        'Tratamiento de alergias y sensibilidades',
+        'Apoyo en enfermedades respiratorias',
+        'Mejora de condiciones de la piel',
+        'Equilibrio de trastornos hormonales',
+        'Manejo del dolor de forma natural',
+        'Apoyo en problemas digestivos'
+      ],
+      duration: '45-60 min',
+      sessions: 'Plan personalizado según condición',
+      category: 'Medicina Cuántica'
     }
   ];
 
@@ -428,6 +467,20 @@ export default function TratamientosPage() {
                               fill 
                               className="object-cover rounded-2xl" 
                             />
+                          ) : treatment.id === 11 ? (
+                            <Image 
+                              src="/weber_laser_therapy.png" 
+                              alt="Terapia Neurológica Láser Weber" 
+                              fill 
+                              className="object-cover rounded-2xl" 
+                            />
+                          ) : treatment.id === 12 ? (
+                            <Image 
+                              src="/bioresonance_therapy.png" 
+                              alt="Terapia de Biorresonancia" 
+                              fill 
+                              className="object-cover rounded-2xl" 
+                            />
                           ) : (
                             <div className="text-center text-gray-400">
                               <div className="text-6xl mb-3">🏥</div>
@@ -462,6 +515,7 @@ export default function TratamientosPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

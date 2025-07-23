@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { CheckCircle, Heart, Target, ArrowLeft, Award, Users, Shield, Zap } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -389,6 +390,7 @@ export default function NosotrosPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

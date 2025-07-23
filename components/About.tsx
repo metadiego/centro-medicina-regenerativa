@@ -34,33 +34,40 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            {keyPoints.map((point, index) => (
-              <div key={index} className="flex items-start space-x-6">
-                <div className="flex-shrink-0 transform transition-transform duration-300 hover:scale-110">
-                  {point.icon}
+        {/* Video Section */}
+        <div className="mb-20">
+          <div className="relative w-full max-w-4xl mx-auto" style={{aspectRatio: '16/9'}}>
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-2xl border border-gray-200 flex items-center justify-center">
+              <div className="text-center text-gray-500">
+                <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-8 rounded-full shadow-lg mx-auto w-fit mb-6">
+                  <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-3">
-                    {point.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed font-light text-lg">
-                    {point.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="flex justify-center">
-            <div className="w-96 h-96 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center">
-              <div className="text-gray-400 text-center">
-                <div className="text-6xl mb-4">🏥</div>
-                <p className="text-lg font-light">Imagen del Centro</p>
+                <h3 className="text-2xl font-medium text-gray-700 mb-4">¿Por qué elegir CMR?</h3>
+                <p className="text-lg text-gray-600 max-w-md mx-auto">
+                  Conoce nuestra historia, tecnología y compromiso con la excelencia médica
+                </p>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Key Points Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {keyPoints.map((point, index) => (
+            <div key={index} className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="flex justify-center mb-6 transform transition-transform duration-300 hover:scale-110">
+                {point.icon}
+              </div>
+              <h3 className="text-xl font-medium text-gray-900 mb-4">
+                {point.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                {point.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

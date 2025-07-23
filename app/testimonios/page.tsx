@@ -61,7 +61,7 @@ export default function TestimoniosPage() {
     {
       id: 7,
       name: 'Roberto Vega',
-      treatment: 'Sueroterapia',
+      treatment: 'Sueroterapia Laser',
       text: 'La sueroterapia me ha dado un nivel de energía que no había sentido en años. Mi rendimiento laboral y personal ha mejorado notablemente. Recomiendo CMR al 100%.',
       rating: 5,
       location: 'Arecibo, PR',
@@ -75,6 +75,78 @@ export default function TestimoniosPage() {
       rating: 5,
       location: 'Mayagüez, PR',
       date: 'Junio 2024'
+    },
+    {
+      id: 9,
+      name: 'José M. Hernández',
+      treatment: 'Terapia MLS Láser',
+      text: 'Sufría de dolor severo de espalda que me impedía vivir una vida normal. Gracias a la terapia MLS láser he recuperado mi movilidad y puedo disfrutar de actividades que pensé nunca volvería a hacer.',
+      rating: 5,
+      location: 'San Juan, PR',
+      date: 'Mayo 2024'
+    },
+    {
+      id: 10,
+      name: 'Carmen L. Vázquez',
+      treatment: 'Terapia NPT Células Madre',
+      text: 'Perdí gran parte de mi visión por glaucoma y los doctores no me daban esperanza. Con la terapia NPT de células madre he recuperado visión significativamente y mi calidad de vida ha mejorado enormemente.',
+      rating: 5,
+      location: 'Bayamón, PR',
+      date: 'Abril 2024'
+    },
+    {
+      id: 11,
+      name: 'Rafael Santos',
+      treatment: 'NPT Células Madre y Medicina Sistémica',
+      text: 'Los médicos querían amputar mi pierna por pie diabético y me dieron por perdido. Gracias a la terapia NPT de células madre y las fórmulas herbales sistémicas logré salvar mi pierna y recuperar mi vida.',
+      rating: 5,
+      location: 'Caguas, PR',
+      date: 'Marzo 2024'
+    },
+    {
+      id: 12,
+      name: 'Miriam Ortega',
+      treatment: 'Células Madre y Terapia MLS',
+      text: 'La artritis severa me tenía postrada en cama sin poder moverme. Con la combinación de células madre y terapia MLS láser ahora vivo una vida completamente normal y sin dolor.',
+      rating: 5,
+      location: 'Ponce, PR',
+      date: 'Febrero 2024'
+    },
+    {
+      id: 13,
+      name: 'Luis A. Morales',
+      treatment: 'Fórmulas Herbales y Células Madre',
+      text: 'Tenía problemas severos en los riñones y mis marcadores sanguíneos estaban críticos. Después del tratamiento con fórmulas herbales y células madre, mis análisis mejoraron significativamente.',
+      rating: 5,
+      location: 'Arecibo, PR',
+      date: 'Enero 2024'
+    },
+    {
+      id: 14,
+      name: 'Eduardo Ramírez',
+      treatment: 'Tratamiento APEX',
+      text: 'La disfunción eréctil había arruinado mi vida matrimonial y mi autoestima. Gracias al tratamiento APEX recuperé mi vigor sexual y mi vida íntima. Mi esposa y yo estamos más felices que nunca.',
+      rating: 5,
+      location: 'Guaynabo, PR',
+      date: 'Diciembre 2023'
+    },
+    {
+      id: 15,
+      name: 'Isabel Maldonado',
+      treatment: 'Máquina EmpowerRF',
+      text: 'Sufría de incontinencia urinaria severa y tenía que usar pañales especiales todos los días. Con el tratamiento EmpowerRF resolví completamente el problema y recuperé mi dignidad y confianza.',
+      rating: 5,
+      location: 'Carolina, PR',
+      date: 'Noviembre 2023'
+    },
+    {
+      id: 16,
+      name: 'Ramón Figueroa',
+      treatment: 'Células Madre y Terapia Neurológica',
+      text: 'Me diagnosticaron Parkinson y pensé que mi vida había terminado. Con células madre y terapia neurológica he tenido una mejora del 30% en mis síntomas y he recuperado esperanza en el futuro.',
+      rating: 5,
+      location: 'Mayagüez, PR',
+      date: 'Octubre 2023'
     }
   ];
 
@@ -104,8 +176,38 @@ export default function TestimoniosPage() {
           </div>
         </section>
 
+        {/* Video Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
+                Experiencias <span className="font-medium text-cyan-600">Reales</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
+                Escucha directamente de nuestros pacientes sobre su transformación de salud
+              </p>
+            </div>
+            
+            <div className="relative w-full" style={{aspectRatio: '16/9'}}>
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-xl border border-gray-200 flex items-center justify-center">
+                <div className="text-center text-gray-500">
+                  <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-8 rounded-full shadow-lg mx-auto w-fit mb-6">
+                    <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-medium text-gray-700 mb-4">Video de Testimonios</h3>
+                  <p className="text-lg text-gray-600 max-w-md mx-auto">
+                    Próximamente: Testimonios en video de nuestros pacientes satisfechos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Testimonials Grid */}
-        <section className="py-12">
+        <section className="py-12" style={{backgroundColor: 'rgb(247,247,247)'}}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="grid md:grid-cols-2 gap-8">
               {testimonials.map((testimonial) => (

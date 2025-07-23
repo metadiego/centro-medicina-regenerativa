@@ -1,38 +1,11 @@
 'use client';
 
 import Header from '@/components/Header';
-import { Mail, Phone, MapPin, Send, ArrowLeft, Clock, Calendar } from 'lucide-react';
+import Footer from '@/components/Footer';
+import { Mail, Phone, MapPin, ArrowLeft, Clock, Calendar } from 'lucide-react';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function ContactoPage() {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    telefono: '',
-    servicio: '',
-    mensaje: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Gracias por tu mensaje. Te contactaremos pronto.');
-    setFormData({
-      nombre: '',
-      email: '',
-      telefono: '',
-      servicio: '',
-      mensaje: ''
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <div className="min-h-screen" style={{backgroundColor: 'rgb(247,247,247)'}}>
@@ -70,7 +43,10 @@ export default function ContactoPage() {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-3">Teléfono</h3>
-                <p className="text-gray-600 text-lg mb-4">+1 (787) 123-4567</p>
+                <div className="text-gray-600 text-lg mb-4">
+                  <div>+1 (787) 780-7575</div>
+                  <div>+1 (787) 780-7676</div>
+                </div>
                 <p className="text-gray-500 text-sm">
                   Llámanos para agendar tu cita o resolver cualquier duda
                 </p>
@@ -82,7 +58,9 @@ export default function ContactoPage() {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-3">Email</h3>
-                <p className="text-gray-600 text-lg mb-4">info@cmr-medicina.com</p>
+                <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-4 break-all px-2">
+                  consulta@centrodemedicinaregenerativa.com
+                </p>
                 <p className="text-gray-500 text-sm">
                   Escríbenos para consultas detalladas o información adicional
                 </p>
@@ -97,10 +75,12 @@ export default function ContactoPage() {
                 <div className="space-y-4 text-gray-600 text-sm mb-4">
                   <div>
                     <p className="font-medium text-gray-700 mb-1">Bayamón</p>
+                    <p>Centro de Medicina Regenerativa</p>
                     <p>51 Calle Dr. Santiago Veve<br />Bayamón, PR 00961</p>
                   </div>
                   <div>
                     <p className="font-medium text-gray-700 mb-1">Caguas</p>
+                    <p>Centro de Medicina Regenerativa</p>
                     <p>Av. Luis Muñoz Marín<br />Caguas, PR 00725</p>
                   </div>
                 </div>
@@ -116,145 +96,76 @@ export default function ContactoPage() {
         <section className="py-16" style={{backgroundColor: 'rgb(247,247,247)'}}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="grid lg:grid-cols-3 gap-16">
-              {/* Contact Form */}
+              {/* Call to Action */}
               <div className="lg:col-span-2">
-                <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
-                  <h2 className="text-2xl font-medium text-gray-900 mb-8">
-                    Envíanos un mensaje
-                  </h2>
+                <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-100 text-center h-full flex flex-col justify-center">
+                  <div className="mb-8">
+                    <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-7 rounded-full shadow-lg mx-auto w-fit mb-8">
+                      <Phone className="w-14 h-14 text-white" />
+                    </div>
+                    <h2 className="text-4xl font-medium text-gray-900 mb-6">
+                      ¿Listo para tu consulta?
+                    </h2>
+                  </div>
                   
-                  <form onSubmit={handleSubmit}>
-                    <div className="grid md:grid-cols-2 gap-6 mb-8">
-                      <div>
-                        <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-3">
-                          Nombre Completo *
-                        </label>
-                        <input
-                          type="text"
-                          id="nombre"
-                          name="nombre"
-                          value={formData.nombre}
-                          onChange={handleChange}
-                          required
-                          className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 text-lg"
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-3">
-                          Teléfono *
-                        </label>
-                        <input
-                          type="tel"
-                          id="telefono"
-                          name="telefono"
-                          value={formData.telefono}
-                          onChange={handleChange}
-                          required
-                          className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 text-lg"
-                        />
+                  <div className="space-y-8 mb-10">
+                    <div className="flex items-center justify-center space-x-5 text-gray-700">
+                      <Phone className="w-7 h-7 text-cyan-600" />
+                      <div className="text-2xl font-medium">
+                        <div>+1 (787) 780-7575</div>
+                        <div>+1 (787) 780-7676</div>
                       </div>
                     </div>
-
-                    <div className="mb-8">
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-3">
-                        Correo Electrónico *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 text-lg"
-                      />
+                    
+                    <div className="bg-cyan-50 rounded-xl p-6 max-w-md mx-auto">
+                      <h3 className="text-lg font-medium text-gray-900 mb-4">Horarios de Atención</h3>
+                      <div className="space-y-2 text-gray-600">
+                        <div className="flex justify-between">
+                          <span>Lunes - Viernes</span>
+                          <span className="font-medium">8:00 AM - 6:00 PM</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Sábados</span>
+                          <span className="font-medium">9:00 AM - 2:00 PM</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Domingos</span>
+                          <span className="font-medium">Cerrado</span>
+                        </div>
+                      </div>
                     </div>
+                  </div>
 
-                    <div className="mb-8">
-                      <label htmlFor="servicio" className="block text-sm font-medium text-gray-700 mb-3">
-                        Tratamiento de Interés
-                      </label>
-                      <select
-                        id="servicio"
-                        name="servicio"
-                        value={formData.servicio}
-                        onChange={handleChange}
-                        className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 text-lg"
-                      >
-                        <option value="">Selecciona un tratamiento</option>
-                        <option value="terapia-dolor">Terapia del Dolor</option>
-                        <option value="terapia-celulas-madre">Terapia Células Madre</option>
-                        <option value="sueroterapia">Sueroterapia</option>
-                        <option value="camara-energetica">Cámara Energética</option>
-                        <option value="terapia-circulatoria">Terapia Circulatoria</option>
-                        <option value="terapia-erectil">Terapia Disfunción Eréctil</option>
-                        <option value="terapia-femenina">Terapia Íntima Femenina</option>
-                        <option value="terapia-pemf">Terapia PEMF</option>
-                        <option value="neurocatch">NeuroCatch</option>
-                        <option value="camara-hiperbarica">Cámara Hiperbárica</option>
-                        <option value="consulta-general">Consulta General</option>
-                      </select>
-                    </div>
-
-                    <div className="mb-8">
-                      <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-3">
-                        Mensaje
-                      </label>
-                      <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        value={formData.mensaje}
-                        onChange={handleChange}
-                        rows={5}
-                        className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 text-lg"
-                        placeholder="Cuéntanos sobre tu consulta o condición..."
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold py-5 px-8 rounded-xl transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
+                  <div>
+                    <a
+                      href="tel:+17877807575"
+                      className="inline-flex items-center justify-center px-16 py-5 text-2xl font-semibold text-white bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 mb-6"
                     >
-                      <Send className="w-6 h-6" />
-                      <span>Enviar Mensaje</span>
-                    </button>
-                  </form>
+                      <Phone className="w-8 h-8 mr-4" />
+                      <span>Llama Ahora</span>
+                    </a>
+                    
+                    <p className="text-base text-gray-500">
+                      Consulta inicial gratuita • Atención personalizada • Citas el mismo día
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Business Hours & Additional Info */}
+              {/* Additional Info */}
               <div className="space-y-8">
-                {/* Hours */}
-                <div className="bg-white rounded-2xl p-8 shadow-lg">
-                  <div className="flex items-center mb-6">
-                    <Clock className="w-6 h-6 text-cyan-600 mr-3" />
-                    <h3 className="text-xl font-medium text-gray-900">Horarios</h3>
-                  </div>
-                  <div className="space-y-3 text-gray-600">
-                    <div className="flex justify-between">
-                      <span>Lunes - Viernes</span>
-                      <span className="font-medium">8:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sábados</span>
-                      <span className="font-medium">9:00 AM - 2:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Domingos</span>
-                      <span className="font-medium">Cerrado</span>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Appointment Info */}
                 <div className="bg-white rounded-2xl p-8 shadow-lg">
                   <div className="flex items-center mb-6">
                     <Calendar className="w-6 h-6 text-cyan-600 mr-3" />
-                    <h3 className="text-xl font-medium text-gray-900">Citas</h3>
+                    <h3 className="text-xl font-medium text-gray-900">Información de Citas</h3>
                   </div>
                   <div className="space-y-4 text-gray-600">
                     <p className="text-sm leading-relaxed">
-                      Las consultas son por cita previa. Te recomendamos agendar con al menos 24 horas de anticipación.
+                      Las consultas son por cita previa. Ofrecemos citas el mismo día para casos urgentes.
+                    </p>
+                    <p className="text-sm leading-relaxed">
+                      Consulta inicial gratuita para nuevos pacientes. Nuestros especialistas evaluarán tu caso y crearán un plan personalizado.
                     </p>
                     <p className="text-sm leading-relaxed">
                       Para emergencias médicas, contacta inmediatamente a tu médico de cabecera o acude al hospital más cercano.
@@ -262,25 +173,34 @@ export default function ContactoPage() {
                   </div>
                 </div>
 
-                {/* Quick Contact */}
+                {/* Why Choose Us */}
                 <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl p-8 text-white">
-                  <h3 className="text-xl font-medium mb-4">¿Necesitas ayuda inmediata?</h3>
-                  <p className="text-cyan-100 mb-6 text-sm">
-                    Nuestro equipo está listo para atenderte y resolver todas tus dudas
-                  </p>
-                  <Link 
-                    href="tel:+17877807575"
-                    className="inline-flex items-center justify-center w-full bg-white text-cyan-600 font-medium py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200"
-                  >
-                    <Phone className="w-5 h-5 mr-2" />
-                    Llamar Ahora
-                  </Link>
+                  <h3 className="text-xl font-medium mb-4">¿Por qué elegir CMR?</h3>
+                  <ul className="space-y-3 text-cyan-100 text-sm">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Especialistas certificados en medicina regenerativa
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Tecnología de vanguardia y tratamientos innovadores
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Atención personalizada y planes de tratamiento únicos
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Resultados comprobados y satisfacción del paciente
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
