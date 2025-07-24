@@ -36,19 +36,16 @@ export default function About() {
 
         {/* Video Section */}
         <div className="mb-20">
-          <div className="relative w-full max-w-4xl mx-auto" style={{aspectRatio: '16/9'}}>
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-2xl border border-gray-200 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-8 rounded-full shadow-lg mx-auto w-fit mb-6">
-                  <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-medium text-gray-700 mb-4">¿Por qué elegir CMR?</h3>
-                <p className="text-lg text-gray-600 max-w-md mx-auto">
-                  Conoce nuestra historia, tecnología y compromiso con la excelencia médica
-                </p>
-              </div>
+          <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+            <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
+              <iframe 
+                src="https://player.vimeo.com/video/1104273516?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} 
+                title="Centro de Medicina Regenerativa"
+              ></iframe>
             </div>
           </div>
         </div>

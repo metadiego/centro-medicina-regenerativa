@@ -2,7 +2,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Mail, Phone, MapPin, ArrowLeft, Clock, Calendar } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowLeft, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ContactoPage() {

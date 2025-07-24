@@ -2,7 +2,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ArrowLeft, FileText, Shield, Lock, Eye, Mail, Phone, MapPin, Globe, Clock, Users, CheckCircle } from 'lucide-react';
+import { ArrowLeft, FileText, Shield, Eye, Mail, Phone, MapPin, Globe, Clock, Users, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 

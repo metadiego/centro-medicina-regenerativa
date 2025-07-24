@@ -4,8 +4,8 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: 'Flor Ortiz',
-      treatment: 'Tratamiento láser',
-      text: 'El tratamiento láser ha sido increíble. He notado una mejora significativa en mi condición y me siento mucho mejor.',
+      treatment: 'Terapia MLS Láser',
+      text: 'Sufría de dolor intenso de espalda que me impedía trabajar. Con la terapia MLS láser el dolor desapareció completamente y pude retomar mi vida normal.',
       rating: 5
     },
     {
@@ -16,14 +16,14 @@ export default function Testimonials() {
     },
     {
       name: 'Miguel A. Reyes',
-      treatment: 'Terapia IV y láser',
-      text: 'La combinación de terapia IV y láser ha transformado mi vida. Tengo más energía y me siento rejuvenecido.',
+      treatment: 'Células Madre NPT y Medicina Natural',
+      text: 'Vivía sin energía, con fatiga permanente que arruinaba mi día a día. Después del tratamiento con plantas medicinales, dieta personalizada y células madre NPT, mi vida ha dado un cambio gigantesco.',
       rating: 5
     },
     {
       name: 'Gloria Márquez',
-      treatment: 'Terapia IV y vitamina C',
-      text: 'Las terapias de vitamina C e IV han fortalecido mi sistema inmunológico. Me siento más saludable que nunca.',
+      treatment: 'Suero Intravenoso de Vitamina C',
+      text: 'Tenía serios problemas autoinmunes que controlaban mi vida. Con la terapia de suero intravenoso de vitamina C, ahora puedo vivir en paz y sin dolor.',
       rating: 5
     }
   ];

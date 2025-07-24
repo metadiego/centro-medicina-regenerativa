@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-100">
@@ -25,31 +27,31 @@ export default function Header() {
           <nav className="hidden md:flex space-x-10">
             <Link
               href="/"
-              className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
+              className={`${pathname === '/' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase`}
             >
               Inicio
             </Link>
             <Link
               href="/tratamientos"
-              className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
+              className={`${pathname === '/tratamientos' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase`}
             >
               Tratamientos
             </Link>
             <Link
               href="/testimonios"
-              className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
+              className={`${pathname === '/testimonios' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase`}
             >
               Testimonios
             </Link>
             <Link
               href="/nosotros"
-              className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
+              className={`${pathname === '/nosotros' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase`}
             >
               Nosotros
             </Link>
             <Link
               href="/contacto"
-              className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
+              className={`${pathname === '/contacto' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase`}
             >
               Contacto
             </Link>
@@ -75,35 +77,35 @@ export default function Header() {
               <Link
                 href="/"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
+                className={`block w-full text-left px-3 py-3 ${pathname === '/' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium`}
               >
                 Inicio
               </Link>
               <Link
                 href="/tratamientos"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
+                className={`block w-full text-left px-3 py-3 ${pathname === '/tratamientos' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium`}
               >
                 Tratamientos
               </Link>
               <Link
                 href="/testimonios"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
+                className={`block w-full text-left px-3 py-3 ${pathname === '/testimonios' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium`}
               >
                 Testimonios
               </Link>
               <Link
                 href="/nosotros"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
+                className={`block w-full text-left px-3 py-3 ${pathname === '/nosotros' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium`}
               >
                 Nosotros
               </Link>
               <Link
                 href="/contacto"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
+                className={`block w-full text-left px-3 py-3 ${pathname === '/contacto' ? 'text-cyan-600' : 'text-gray-700'} hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium`}
               >
                 Contacto
               </Link>
