@@ -16,7 +16,7 @@ export default function Services() {
       imageType: 'file',
       title: 'Terapia de Células Madre',
       description: 'Tratamientos regenerativos utilizando células madre para la reparación y regeneración de tejidos dañados.',
-      features: ['Medicina regenerativa', 'Células madre', 'Reparación tisular']
+      features: ['Medicina regenerativa avanzada', 'Células madre', 'Activación láser de células']
     },
     {
       image: '/iv_laser.png',

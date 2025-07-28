@@ -433,7 +433,6 @@ export default function PrivacidadPage() {
                       <Phone className="w-5 h-5 text-cyan-600 mr-3" />
                       <div className="text-gray-700">
                         <div><strong>{language === 'es' ? 'Teléfono:' : 'Phone:'}</strong> +1 (787) 780-7575</div>
-                        <div className="ml-16">+1 (787) 780-7676</div>
                       </div>
                     </div>
                     <div className="flex items-center">
@@ -460,7 +459,7 @@ export default function PrivacidadPage() {
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span><strong>Horario:</strong> Solo de 7:00 AM a 6:00 PM, lunes a viernes</span>
+                      <span><strong>Horario:</strong> 7:00 AM a 5:00 PM, lunes a sabado</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -652,7 +651,6 @@ export default function PrivacidadPage() {
                       <Phone className="w-5 h-5 text-cyan-600 mr-3" />
                       <div className="text-gray-700">
                         <div>+1 (787) 780-7575</div>
-                        <div>+1 (787) 780-7676</div>
                       </div>
                     </div>
                     <div className="flex items-center justify-center">

@@ -2,7 +2,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ArrowLeft, Clock, Users, CheckCircle } from 'lucide-react';
+import { ArrowLeft, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -18,8 +18,6 @@ export default function TratamientosPage() {
         'Manejo integral de condiciones crónicas',
         'Técnicas no invasivas avanzadas'
       ],
-      duration: 'Variable',
-      sessions: 'Según condición',
       category: 'Medicina Regenerativa',
       conditions: {
         musculoskeletal: [
@@ -43,58 +41,54 @@ export default function TratamientosPage() {
     {
       id: 1,
       title: 'Terapia de Dolor y Recuperación',
-      shortDescription: 'Terapia MLS (Sistema Multionda Sincronizado) que combina dos longitudes de onda láser para máxima eficacia terapéutica.',
-      fullDescription: 'La terapia MLS utiliza tecnología láser patentada aprobada por la FDA que sincroniza dos longitudes de onda para máxima eficacia terapéutica. Esta tecnología produce efectos superiores de alivio del dolor y reducción de inflamación mediante fotobiomodulación avanzada.',
+      shortDescription: 'Ofrecemos Terapia MLS (Sistema Multionda Sincronizado) y Terapia HILT (High-Intensity Laser Therapy) para lograr una máxima eficacia terapéutica en el alivio del dolor y la recuperación.',
+      fullDescription: 'Somos el centro más avanzado en el tratamiento de dolor y recuperación en Puerto Rico. Tanto el láser MLS como el láser HILT actúan en conjunto para proporcionar calentamiento tópico con el fin de elevar la temperatura del tejido, aliviar el dolor y la rigidez muscular y articular, el dolor de artritis o el espasmo muscular, el aumento temporal de la circulación sanguínea local y promover la relajación muscular. Juntas, estas tecnologías proporcionan un tratamiento integral único que combina alivio inmediato con curación a largo plazo.',
       benefits: [
         '85-90% de eficacia en alivio del dolor',
         'Bloqueo de señales de dolor al cerebro',
         'Liberación de endorfinas y encefalinas naturales',
         'Reducción significativa de inflamación y edema',
         'Aceleración de regeneración celular',
-        'Sin riesgo térmico ni efectos secundarios'
+        'Sin riesgo térmico ni efectos secundarios',
+        'Tratamiento libre de medicamentos aprobado por FDA',
+        'Penetración profunda en tejidos para curación a largo plazo'
       ],
-      duration: '45-60 min',
-      sessions: '6-12 sesiones',
       category: 'Dolor y Recuperación'
     },
     {
       id: 2,
-      title: 'Terapia de Células Madre',
-      shortDescription: 'Tratamiento innovador con células madre autólogas extraídas del propio cuerpo del paciente.',
-      fullDescription: 'Terapia innovadora que utiliza células madre autólogas extraídas del propio cuerpo del paciente. Es el tratamiento de células madre legal más avanzado en Estados Unidos, promoviendo la curación natural sin riesgo de rechazo inmunológico.',
+      title: 'Terapia Celular Avanzada',
+      shortDescription: 'Tratamiento exclusivo en Puerto Rico, con células madre embrionarias ultra pequeñas (VSELs)  activadas con luz láser de frecuencia modulada (SONG), desarrollada por el Dr. Todd Ovokaitys.',
+      fullDescription: 'Ofrecemos una terapia avanzada de celulas madre que funciona mediante la extraccion y  la activación de VSELs (células madre embrionarias ultra pequeñas)  de la sangre del paciente.  Esta terapia experimental, basada en el trabajo del Dr. Todd Ovokaitys, se investiga para tratar articulaciones, músculos, salud metabólica, envejecimiento celular y condiciones neurodegenerativas como una terapia de vanguardia en medicina regenerativa.',
       benefits: [
-        'Uso de células madre del propio paciente',
-        'Sin riesgo de rechazo inmunológico',
-        'Tratamiento legal más avanzado en EE.UU.',
-        'Regeneración natural de tejidos dañados',
-        'Estimulación de procesos de curación propios',
-        'Terapia personalizada e individualizada'
+        'Terapia personalizada e individualizada',
+        'Articulaciones, músculos y tejidos blandos',
+        'Salud metabólica y hepática',
+        'Rejuvenecimiento celular',
+        'Tratamiento de enfermedades neurodegenerativas',
+        'Optimización general del bienestar',
       ],
-      duration: '60-90 min',
-      sessions: '1-3 aplicaciones (según caso)',
       category: 'Medicina Regenerativa'
     },
     {
       id: 3,
-      title: 'Sueroterapia',
-      shortDescription: 'Aplicación de vitaminas y medicinas naturales que aportan grandes beneficios a tu salud.',
-      fullDescription: 'Tratamiento intravenoso de vitaminas, minerales y medicinas naturales con absorción del 100%. Proporciona beneficios inmediatos para la salud y bienestar general del paciente.',
+      title: 'Sueroterapia Laser',
+      shortDescription: 'Aplicación de vitamina C en altas dosis combinado con luz láser de frecuencia modulada para potenciar tu salud.',
+      fullDescription: 'Tratamiento intravenoso de vitamina C en altas dosis para potenciar el sistema inmunológico. Somos el unico centro en Puerto Rico que ofrece dosis de vitamina C mayores a 25 gramos.',
       benefits: [
-        'Hidratación profunda',
-        'Absorción 100% de nutrientes',
-        'Fortalecimiento del sistema inmunológico',
-        'Aumento de energía y vitalidad',
-        'Detoxificación del organismo'
+        'Potencia el sistema inmunológico',
+        'Aumenta la absorción de nutrientes',
+        'Aumenta la energía y vitalidad',
+        'Detoxifica el organismo',
+        'Tratamiento no invasivo'
       ],
-      duration: '45-60 min',
-      sessions: '1-4 sesiones mensuales',
       category: 'Bienestar General'
     },
     {
       id: 4,
       title: 'Terapia Disfunción Eréctil',
-      shortDescription: 'APEX by InMode utiliza tecnología de radiofrecuencia avanzada para restaurar la función eréctil de manera no invasiva.',
-      fullDescription: 'APEX by InMode utiliza radiofrecuencia bipolar inteligente para estimular la formación de nuevos vasos sanguíneos y producción de colágeno. Mejora la circulación sanguínea y fortalece las estructuras que sostienen la función eréctil de manera completamente no invasiva.',
+      shortDescription: 'APEX utiliza tecnología de radiofrecuencia avanzada para restaurar la función eréctil de manera no invasiva.',
+      fullDescription: 'APEX utiliza radiofrecuencia bipolar inteligente para estimular la formación de nuevos vasos sanguíneos y producción de colágeno. Mejora la circulación sanguínea y fortalece las estructuras que sostienen la función eréctil de manera completamente no invasiva.',
       benefits: [
         'Estimulación de nuevos vasos sanguíneos',
         'Mejora de la circulación local',
@@ -103,14 +97,12 @@ export default function TratamientosPage() {
         'Tratamiento completamente no invasivo',
         'Sin tiempo de recuperación'
       ],
-      duration: '20-30 min',
-      sessions: '6-8 sesiones',
       category: 'Salud Masculina'
     },
     {
       id: 5,
       title: 'Terapia Íntima Femenina',
-      shortDescription: 'EmpowerRF por InMode combina radiofrecuencia y estimulación muscular eléctrica para el bienestar íntimo femenino integral.',
+      shortDescription: 'EmpowerRF combina radiofrecuencia y estimulación muscular eléctrica para el bienestar íntimo femenino integral.',
       fullDescription: 'EmpowerRF combina estimulación muscular eléctrica y radiofrecuencia para el bienestar íntimo femenino integral. Esta tecnología FDA-aprobada estimula la producción de colágeno, fortalece el suelo pélvico y restaura la salud íntima de manera no invasiva.',
       benefits: [
         'Reducción de incontinencia urinaria',
@@ -120,8 +112,6 @@ export default function TratamientosPage() {
         'Estimulación de producción de colágeno',
         'Tratamiento sin tiempo de recuperación'
       ],
-      duration: '20-30 min',
-      sessions: '3 sesiones (1 mes de separación)',
       category: 'Salud Femenina'
     },
     {
@@ -136,8 +126,6 @@ export default function TratamientosPage() {
         'Reducción de la inflamación',
         'Aceleración de la curación'
       ],
-      duration: '20-30 min',
-      sessions: '10-20 sesiones',
       category: 'Medicina Regenerativa'
     },
     {
@@ -157,8 +145,6 @@ export default function TratamientosPage() {
         'Efectos anti-envejecimiento y desintoxicación',
         'Alivio de dolores e hinchazón'
       ],
-      duration: '90-120 min',
-      sessions: '20-60 sesiones (según condición)',
       category: 'Medicina Regenerativa'
     },
     {
@@ -173,8 +159,6 @@ export default function TratamientosPage() {
         'Reducción de la inflamación',
         'Recuperación acelerada'
       ],
-      duration: '20-30 min',
-      sessions: '8-15 sesiones',
       category: 'Medicina Regenerativa'
     },
     {
@@ -189,8 +173,6 @@ export default function TratamientosPage() {
         'Seguimiento personalizado',
         'Tecnología no invasiva'
       ],
-      duration: '15-20 min',
-      sessions: 'Según evaluación',
       category: 'Neurodiagnóstico'
     },
     {
@@ -206,8 +188,6 @@ export default function TratamientosPage() {
         'Tratamiento no invasivo libre de medicamentos',
         'Más de 25 millones de tratamientos seguros realizados'
       ],
-      duration: '20-30 min',
-      sessions: 'Según necesidad del paciente',
       category: 'Salud Circulatoria'
     },
     {
@@ -223,8 +203,6 @@ export default function TratamientosPage() {
         'Tratamiento completamente no invasivo',
         'Configuraciones personalizables de duración e intensidad'
       ],
-      duration: '20-30 min',
-      sessions: 'Uso diario recomendado',
       category: 'Neurología'
     },
     {
@@ -240,8 +218,6 @@ export default function TratamientosPage() {
         'Manejo del dolor de forma natural',
         'Apoyo en problemas digestivos'
       ],
-      duration: '45-60 min',
-      sessions: 'Plan personalizado según condición',
       category: 'Medicina Cuántica'
     }
   ];
@@ -376,21 +352,6 @@ export default function TratamientosPage() {
                               </li>
                             ))}
                           </ul>
-                        </div>
-
-                        <div className="border-t border-gray-100 pt-6">
-                          <div className="flex items-center space-x-8 text-gray-600">
-                            <div className="flex items-center">
-                              <Clock className="w-5 h-5 mr-2 text-cyan-500" />
-                              <span className="font-medium">Duración:</span>
-                              <span className="ml-2">{treatment.duration}</span>
-                            </div>
-                            <div className="flex items-center">
-                              <Users className="w-5 h-5 mr-2 text-cyan-500" />
-                              <span className="font-medium">Sesiones:</span>
-                              <span className="ml-2">{treatment.sessions}</span>
-                            </div>
-                          </div>
                         </div>
                       </div>
 

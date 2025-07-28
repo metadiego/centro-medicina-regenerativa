@@ -45,7 +45,6 @@ export default function ContactoPage() {
                 <h3 className="text-xl font-medium text-gray-900 mb-3">Teléfono</h3>
                 <div className="text-gray-600 text-lg mb-4">
                   <div>+1 (787) 780-7575</div>
-                  <div>+1 (787) 780-7676</div>
                 </div>
                 <p className="text-gray-500 text-sm">
                   Llámanos para agendar tu cita o resolver cualquier duda
@@ -113,7 +112,6 @@ export default function ContactoPage() {
                       <Phone className="w-7 h-7 text-cyan-600" />
                       <div className="text-2xl font-medium">
                         <div>+1 (787) 780-7575</div>
-                        <div>+1 (787) 780-7676</div>
                       </div>
                     </div>
                     
@@ -121,12 +119,8 @@ export default function ContactoPage() {
                       <h3 className="text-lg font-medium text-gray-900 mb-4">Horarios de Atención</h3>
                       <div className="space-y-2 text-gray-600">
                         <div className="flex justify-between">
-                          <span>Lunes - Viernes</span>
-                          <span className="font-medium">8:00 AM - 6:00 PM</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Sábados</span>
-                          <span className="font-medium">9:00 AM - 2:00 PM</span>
+                          <span>Lunes - Sabado</span>
+                          <span className="font-medium">7:00 AM - 5:00 PM</span>
                         </div>
                         <div className="flex justify-between">
                           <span>Domingos</span>

@@ -34,7 +34,6 @@ export default function Contact() {
                   <h4 className="font-medium text-gray-900 text-lg mb-1">Teléfono</h4>
                   <div className="text-gray-600 text-lg">
                   <div>+1 (787) 780-7575</div>
-                  <div>+1 (787) 780-7676</div>
                 </div>
                 </div>
               </div>
@@ -90,11 +89,10 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-cyan-600" />
                   <div className="text-xl">
                     <div>+1 (787) 780-7575</div>
-                    <div>+1 (787) 780-7676</div>
                   </div>
                 </div>
                 <p className="text-gray-500">
-                  Horarios: Lunes - Viernes 8:00 AM - 6:00 PM | Sábados 9:00 AM - 2:00 PM
+                  Horarios: Lunes - Sabado 7:00 AM - 5:00 PM
                 </p>
 
               </div>
@@ -135,7 +133,7 @@ export default function Contact() {
               </svg>
             </a>
             <a 
-              href="#" 
+              href="https://www.facebook.com/Centrodemedicinaregenerativa/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 p-4 rounded-full transition-colors duration-200 transform hover:scale-105"
@@ -146,7 +144,7 @@ export default function Contact() {
               </svg>
             </a>
             <a 
-              href="#" 
+              href="https://www.instagram.com/centrodemedicinaregenerativa/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-pink-600 hover:bg-pink-700 p-4 rounded-full transition-colors duration-200 transform hover:scale-105"
@@ -157,7 +155,7 @@ export default function Contact() {
               </svg>
             </a>
             <a 
-              href="#" 
+              href="https://www.youtube.com/@centrodemedicinaregenerativa" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-red-600 hover:bg-red-700 p-4 rounded-full transition-colors duration-200 transform hover:scale-105"

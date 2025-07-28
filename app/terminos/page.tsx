@@ -116,9 +116,9 @@ export default function TerminosPage() {
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
                     {language === 'es' ? (
-                      'El sistema enviará notificaciones automatizadas vía SMS, WhatsApp Business (WAB) y/o correo electrónico a empleados designados, exclusivamente durante el horario laboral (7:00 a.m. – 6:00 p.m., de lunes a viernes).'
+                      'El sistema enviará notificaciones automatizadas vía SMS, WhatsApp Business (WAB) y/o correo electrónico a empleados designados, exclusivamente durante el horario laboral (7:00 a.m. – 5:00 p.m., de lunes a sabado).'
                     ) : (
-                      'The system will send automated notifications via SMS, WhatsApp Business (WAB) and/or email to designated employees, exclusively during business hours (7:00 a.m. – 6:00 p.m., Monday to Friday).'
+                      'The system will send automated notifications via SMS, WhatsApp Business (WAB) and/or email to designated employees, exclusively during business hours (7:00 a.m. – 5:00 p.m., Monday to Saturday).'
                     )}
                   </p>
                 </div>
@@ -625,7 +625,6 @@ export default function TerminosPage() {
                       <Phone className="w-5 h-5 text-cyan-600 mr-3" />
                       <div className="text-gray-700">
                         <div>+1 (787) 780-7575</div>
-                        <div>+1 (787) 780-7676</div>
                       </div>
                     </div>
                     <div className="flex items-center justify-center">
