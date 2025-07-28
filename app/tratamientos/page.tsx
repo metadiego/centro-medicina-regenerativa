@@ -44,29 +44,25 @@ export default function TratamientosPage() {
       shortDescription: 'Ofrecemos Terapia MLS (Sistema Multionda Sincronizado) y Terapia HILT (High-Intensity Laser Therapy) para lograr una máxima eficacia terapéutica en el alivio del dolor y la recuperación.',
       fullDescription: 'Somos el centro más avanzado en el tratamiento de dolor y recuperación en Puerto Rico. Tanto el láser MLS como el láser HILT actúan en conjunto para proporcionar calentamiento tópico con el fin de elevar la temperatura del tejido, aliviar el dolor y la rigidez muscular y articular, el dolor de artritis o el espasmo muscular, el aumento temporal de la circulación sanguínea local y promover la relajación muscular. Juntas, estas tecnologías proporcionan un tratamiento integral único que combina alivio inmediato con curación a largo plazo.',
       benefits: [
-        '85-90% de eficacia en alivio del dolor',
-        'Bloqueo de señales de dolor al cerebro',
-        'Liberación de endorfinas y encefalinas naturales',
-        'Reducción significativa de inflamación y edema',
-        'Aceleración de regeneración celular',
-        'Sin riesgo térmico ni efectos secundarios',
-        'Tratamiento libre de medicamentos aprobado por FDA',
-        'Penetración profunda en tejidos para curación a largo plazo'
+        'Tratamiento permisado por FDA (FDA-Cleared)',
+        'Efecto anti-inflamatorio',
+        'Efecto analgésico',
+        'Acelera la regeneración celular',
+        'Mejora de la circulación sanguínea local',
+        'Mejora de funcionamiento metabolico y nervioso',
       ],
       category: 'Dolor y Recuperación'
     },
     {
       id: 2,
       title: 'Terapia Celular Avanzada',
-      shortDescription: 'Tratamiento exclusivo en Puerto Rico, con células madre embrionarias ultra pequeñas (VSELs)  activadas con luz láser de frecuencia modulada (SONG), desarrollada por el Dr. Todd Ovokaitys.',
-      fullDescription: 'Ofrecemos una terapia avanzada de celulas madre que funciona mediante la extraccion y  la activación de VSELs (células madre embrionarias ultra pequeñas)  de la sangre del paciente.  Esta terapia experimental, basada en el trabajo del Dr. Todd Ovokaitys, se investiga para tratar articulaciones, músculos, salud metabólica, envejecimiento celular y condiciones neurodegenerativas como una terapia de vanguardia en medicina regenerativa.',
+      shortDescription: 'Tratamiento exclusivo en Puerto Rico, con células madre propias (autólogas)  activadas con luz láser fotoacústica (SONG).',
+      fullDescription: 'Ofrecemos una terapia avanzada con células madre basada en la extracción y activación de VSELs (Very Small Embryonic-Like Stem Cells), células madre propias ultra pequeñas obtenidas de la sangre del paciente. Esta innovadora intervención, aún en fase de desarrollo y fundamentada en los avances del Dr. Todd Ovokaitys, tiene como objetivo principal contrarrestar el deterioro asociado al envejecimiento. La empresa QIGeneration, pionera en esta tecnología, ha recibido la designación de “Enfermedad Pediátrica Rara” por parte de la FDA de los Estados Unidos, lo que reconoce la necesidad urgente de terapias disruptivas para condiciones actualmente desatendidas. Los estudios preliminares indican que esta terapia puede contribuir a revertir parámetros de envejecimiento biológico, según lo demuestra la metodología del reloj epigenético de Horvath.',
       benefits: [
-        'Terapia personalizada e individualizada',
-        'Articulaciones, músculos y tejidos blandos',
-        'Salud metabólica y hepática',
         'Rejuvenecimiento celular',
-        'Tratamiento de enfermedades neurodegenerativas',
+        'Tratamiento de enfermedades resultantes del envejecimiento',
         'Optimización general del bienestar',
+        'Tratamiento no invasivo de vanguardia'
       ],
       category: 'Medicina Regenerativa'
     },
@@ -87,15 +83,15 @@ export default function TratamientosPage() {
     {
       id: 4,
       title: 'Terapia Disfunción Eréctil',
-      shortDescription: 'APEX utiliza tecnología de radiofrecuencia avanzada para restaurar la función eréctil de manera no invasiva.',
-      fullDescription: 'APEX utiliza radiofrecuencia bipolar inteligente para estimular la formación de nuevos vasos sanguíneos y producción de colágeno. Mejora la circulación sanguínea y fortalece las estructuras que sostienen la función eréctil de manera completamente no invasiva.',
+      shortDescription: 'APEX es una plataforma de radiofrecuencia inteligente no invasiva diseñada para optimizar la vitalidad masculina, fortaleciendo la función vascular y estructural en zonas clave para el rendimiento masculino.',
+      fullDescription: 'Mediante el uso de radiofrecuencia bipolar de alta precisión, APEX estimula la angiogénesis (formación de nuevos vasos sanguíneos) y la neocolagénesis (síntesis de nuevo colágeno), mejorando la circulación local y reforzando las estructuras que contribuyen a una vida íntima activa, duradera y saludable. Gracias a su tecnología de control térmico en tiempo real y a su aplicador de tamaño reducido, APEX permite tratar tejidos delicados con máxima seguridad, confort y efectividad, sin recurrir a fármacos ni procedimientos invasivos.',
       benefits: [
-        'Estimulación de nuevos vasos sanguíneos',
-        'Mejora de la circulación local',
+        'Tratamiento permisado por FDA (FDA-Cleared)',
+        'Mayor firmeza, resistencia y funcionalidad',
+        'Mejora del flujo sanguíneo y oxigenación local',
         'Fortalecimiento del tejido mediante colágeno',
-        'Aumento de la rigidez y durabilidad',
-        'Tratamiento completamente no invasivo',
-        'Sin tiempo de recuperación'
+        'Procedimiento ambulatorio, cómodo y sin dolor',
+        'Sin necesidad de recuperación ni uso de consumibles',
       ],
       category: 'Salud Masculina'
     },
@@ -103,14 +99,15 @@ export default function TratamientosPage() {
       id: 5,
       title: 'Terapia Íntima Femenina',
       shortDescription: 'EmpowerRF combina radiofrecuencia y estimulación muscular eléctrica para el bienestar íntimo femenino integral.',
-      fullDescription: 'EmpowerRF combina estimulación muscular eléctrica y radiofrecuencia para el bienestar íntimo femenino integral. Esta tecnología FDA-aprobada estimula la producción de colágeno, fortalece el suelo pélvico y restaura la salud íntima de manera no invasiva.',
+      fullDescription: 'Esta tecnología con visto bueno de la FDA, es decir, FDA-Cleared, combina radiofrecuencia bipolar, estimulación muscular eléctrica (EMS) y coagulación fraccionada para tratar diversas afecciones del bienestar femenino. La plataforma incluye FormaV (radiofrecuencia para rejuvenecimiento íntimo), VTone (electroestimulación del suelo pélvico) y Morpheus8V (radiofrecuencia fraccionada para el canal vaginal). Los tratamientos no requieren anestesia ni tiempo de recuperación, proporcionando una experiencia cómoda con resultados efectivos y seguros.',
       benefits: [
-        'Reducción de incontinencia urinaria',
-        'Mejora de sequedad vaginal y lubricación',
-        'Fortalecimiento del suelo pélvico',
-        'Aumento de sensibilidad y función íntima',
-        'Estimulación de producción de colágeno',
-        'Tratamiento sin tiempo de recuperación'
+        'Tratamiento permisado por FDA (FDA-Cleared)',
+        'Reducción de incontinencia urinaria de esfuerzo y mixta',
+        'Mejora de sequedad vaginal y lubricación natural',
+        'Fortalecimiento integral del suelo pélvico',
+        'Alivio del dolor pélvico crónico',
+        'Mejora de la circulación sanguínea íntima',
+        'Sin anestesia ni tiempo de recuperación'
       ],
       category: 'Salud Femenina'
     },
@@ -120,6 +117,7 @@ export default function TratamientosPage() {
       shortDescription: 'El futuro del alivio del dolor - Ejercicio Celular Inducido Magnéticamente.',
       fullDescription: 'La Terapia PEMF utiliza campos electromagnéticos pulsados para estimular la función celular y promover la curación natural. Mejora la circulación, reduce la inflamación y acelera los procesos de regeneración del cuerpo.',
       benefits: [
+        'Tratamiento permisado por FDA (FDA-Cleared)',
         'Alivio efectivo del dolor',
         'Estimulación de la regeneración celular',
         'Mejora de la circulación',
@@ -131,9 +129,10 @@ export default function TratamientosPage() {
     {
       id: 7,
       title: 'Cámara Hiperbárica',
-      shortDescription: 'Terapia hiperbárica de oxígeno (THO) a 1.3 atmósferas que permite respirar oxígeno puro en ambiente presurizado.',
-      fullDescription: 'Terapia que utiliza una cámara presurizada a 1.3 atmósferas donde el paciente respira oxígeno puro. Esta mayor oxigenación promueve la curación acelerada, reduce la inflamación y estimula procesos regenerativos naturales del cuerpo.',
+      shortDescription: 'Terapia hiperbárica de oxígeno (THO) a 1.4 atmósferas que permite respirar aire enriquecido en oxígeno en ambiente presurizado.',
+      fullDescription: 'Terapia que utiliza una cámara presurizada a 1.4 atmósferas donde el paciente respira aire enriquecido en oxígeno. Esta mayor oxigenación promueve la curación acelerada, reduce la inflamación y estimula procesos regenerativos naturales del cuerpo.',
       benefits: [
+        'Equipo médico FDA-Cleared',
         'Mejora acelerada en la cicatrización de heridas',
         'Reducción significativa de la inflamación',
         'Fortalecimiento de la respuesta inmune',
@@ -149,38 +148,26 @@ export default function TratamientosPage() {
     },
     {
       id: 8,
-      title: 'Cámara Energética',
+      title: 'Terapéutica de Infrarrojo Lejano “Relax Far Infrared Sauna"',
       shortDescription: 'Alivio del dolor, relajación, mejora de la circulación y reducción de la inflamación.',
-      fullDescription: 'Utiliza campos electromagnéticos de baja frecuencia para estimular los procesos naturales de curación del cuerpo. Proporciona alivio del dolor, mejora la circulación sanguínea y promueve la relajación profunda.',
+      fullDescription: 'La Relax Far Infrared Sauna utiliza radiación infrarroja lejana (FIR, 4–14 micras), emitida por tecnología cerámica patentada, para estimular los procesos naturales de curación del cuerpo. Este calor profundo y seguro alivia el dolor, relaja músculos, mejora la circulación, reduce la inflamación y acelera la recuperación al favorecer la regeneración tisular y el metabolismo celular. A diferencia de otros dispositivos que emplean solo campos electromagnéticos, esta sauna aprovecha la capacidad del infrarrojo lejano para penetrar tejidos y producir un calor agradable y seguro desde adentro, no solo en la superficie de la piel.',
       benefits: [
         'Alivio efectivo del dolor',
         'Relajación profunda',
         'Mejora de la circulación sanguínea',
         'Reducción de la inflamación',
-        'Recuperación acelerada'
+        'Recuperación acelerada',
+        'Favorece la eliminación de toxinas y el metabolismo celular'
       ],
       category: 'Medicina Regenerativa'
     },
     {
       id: 9,
-      title: 'NeuroCatch',
-      shortDescription: 'Herramienta neurodiagnóstica que mide objetivamente las mejoras neurológicas en pacientes.',
-      fullDescription: 'Herramienta innovadora de neurodiagnóstico que utiliza electroencefalografía (EEG) para medir objetivamente la función cerebral. Permite evaluar y monitorear el progreso de tratamientos neurológicos de manera precisa y confiable.',
-      benefits: [
-        'Evaluación objetiva de la función cerebral',
-        'Monitoreo preciso del progreso',
-        'Diagnóstico neurocomputarizado',
-        'Seguimiento personalizado',
-        'Tecnología no invasiva'
-      ],
-      category: 'Neurodiagnóstico'
-    },
-    {
-      id: 10,
       title: 'Terapia Circulatoria AVACEN',
       shortDescription: 'Terapia térmica avanzada que mejora la microcirculación utilizando las arterias arteriovenosas de la palma como portal.',
       fullDescription: 'Dispositivo médico Clase II aprobado por la FDA que combina calor controlado y presión negativa aplicados en la palma de la mano. Utiliza las arterias arteriovenosas de la palma para mejorar la microcirculación y reducir la viscosidad sanguínea de manera segura.',
       benefits: [
+        'Equipo médico FDA-Cleared',
         'Alivio temporal de dolor muscular y articular',
         'Mejora significativa de la microcirculación',
         'Reducción de la viscosidad sanguínea',
@@ -190,36 +177,6 @@ export default function TratamientosPage() {
       ],
       category: 'Salud Circulatoria'
     },
-    {
-      id: 11,
-      title: 'Terapia Neurológica Láser',
-      shortDescription: 'Casco ED Weber con 320 LED infrarrojos de 50 mW cada uno para estimular y optimizar la función cerebral.',
-      fullDescription: 'El casco ED Weber está equipado con 320 LED infrarrojos de 50 mW cada uno para estimular la función cerebral. Esta tecnología de fototerapia infrarroja penetra profundamente en el tejido cerebral para mejorar la microcirculación y optimizar la función neurológica de manera no invasiva.',
-      benefits: [
-        'Estimulación de la microcirculación cerebral',
-        'Apoyo a los procesos cerebrales naturales',
-        'Recarga y optimización de la función neurológica',
-        'Penetración profunda de luz infrarroja',
-        'Tratamiento completamente no invasivo',
-        'Configuraciones personalizables de duración e intensidad'
-      ],
-      category: 'Neurología'
-    },
-    {
-      id: 12,
-      title: 'Terapia de Biorresonancia',
-      shortDescription: 'Tratamiento basado en la física cuántica que detecta y neutraliza frecuencias electromagnéticas desequilibradas del cuerpo.',
-      fullDescription: 'Terapia basada en la física cuántica que detecta y corrige frecuencias electromagnéticas desequilibradas en el cuerpo. Mediante electrodos especializados, el dispositivo analiza y revierte las frecuencias disarmónicas para restaurar el equilibrio energético natural.',
-      benefits: [
-        'Tratamiento de alergias y sensibilidades',
-        'Apoyo en enfermedades respiratorias',
-        'Mejora de condiciones de la piel',
-        'Equilibrio de trastornos hormonales',
-        'Manejo del dolor de forma natural',
-        'Apoyo en problemas digestivos'
-      ],
-      category: 'Medicina Cuántica'
-    }
   ];
 
   return (
@@ -285,7 +242,7 @@ export default function TratamientosPage() {
                             <h4 className="font-semibold text-white mb-4 text-lg">Especialidades Principales:</h4>
                             <div className="grid grid-cols-2 gap-3 text-sm">
                               <div className="bg-white/10 rounded-lg p-3 backdrop-blur">
-                                <div className="font-medium mb-1">Musculoesquelético</div>
+                                <div className="font-medium mb-1">Sistema Músculo-Esquelético</div>
                                 <div className="text-cyan-100 text-xs">Artritis, tendinitis, lesiones articulares</div>
                               </div>
                               <div className="bg-white/10 rounded-lg p-3 backdrop-blur">
@@ -416,29 +373,8 @@ export default function TratamientosPage() {
                             />
                           ) : treatment.id === 9 ? (
                             <Image 
-                              src="/neurocatch.png" 
-                              alt="NeuroCatch" 
-                              fill 
-                              className="object-cover rounded-2xl" 
-                            />
-                          ) : treatment.id === 10 ? (
-                            <Image 
                               src="/terapia_circulatoria.png" 
                               alt="Terapia Circulatoria AVACEN" 
-                              fill 
-                              className="object-cover rounded-2xl" 
-                            />
-                          ) : treatment.id === 11 ? (
-                            <Image 
-                              src="/weber_laser_therapy.png" 
-                              alt="Terapia Neurológica Láser Weber" 
-                              fill 
-                              className="object-cover rounded-2xl" 
-                            />
-                          ) : treatment.id === 12 ? (
-                            <Image 
-                              src="/bioresonance_therapy.png" 
-                              alt="Terapia de Biorresonancia" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />

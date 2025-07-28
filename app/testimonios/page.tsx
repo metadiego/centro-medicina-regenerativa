@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { Star, Quote, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
@@ -285,6 +286,7 @@ export default function TestimoniosPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

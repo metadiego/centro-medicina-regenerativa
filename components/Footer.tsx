@@ -45,13 +45,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/tratamientos" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
+                  Tratamientos
+                </Link>
+              </li>
+              <li>
+                <Link href="/testimonios" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
+                  Testimonios
+                </Link>
+              </li>
+              <li>
                 <Link href="/nosotros" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/tratamientos" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
-                  Tratamientos
+                <Link href="https://www.tiendacmr.com" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
+                  Nuestra Tienda
                 </Link>
               </li>
               <li>

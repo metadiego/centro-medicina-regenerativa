@@ -38,7 +38,7 @@ export default function ContactoPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="grid lg:grid-cols-3 gap-12">
               {/* Phone */}
-              <div className="text-center p-8 bg-gray-50 rounded-2xl">
+              <div className="text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
                 <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
@@ -52,7 +52,7 @@ export default function ContactoPage() {
               </div>
 
               {/* Email */}
-              <div className="text-center p-8 bg-gray-50 rounded-2xl">
+              <div className="text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
                 <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
@@ -66,7 +66,7 @@ export default function ContactoPage() {
               </div>
 
               {/* Location */}
-              <div className="text-center p-8 bg-gray-50 rounded-2xl">
+              <div className="text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
                 <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
