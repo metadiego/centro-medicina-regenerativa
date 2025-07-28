@@ -108,7 +108,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/centrodemedicinaregenerativa/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-colors duration-200"
@@ -119,7 +119,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/centrodemedicinaregenerativa/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-pink-600 hover:bg-pink-700 p-3 rounded-lg transition-colors duration-200"
@@ -130,7 +130,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.youtube.com/@centrodemedicinaregenerativa" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-red-600 hover:bg-red-700 p-3 rounded-lg transition-colors duration-200"

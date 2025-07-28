@@ -133,7 +133,7 @@ export default function Contact() {
               </svg>
             </a>
             <a 
-              href="https://www.facebook.com/Centrodemedicinaregenerativa/" 
+              href="https://www.facebook.com/centrodemedicinaregenerativa/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 p-4 rounded-full transition-colors duration-200 transform hover:scale-105"
