@@ -123,12 +123,72 @@ export default function NosotrosPage() {
               </div>
               
               <div className="flex justify-center">
-                <div className="w-96 h-96 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <div className="text-8xl mb-4">🏥</div>
-                    <p className="text-lg font-light">Centro Médico CMR</p>
-                  </div>
+                <div className="w-96 h-96 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-lg border border-gray-100 relative overflow-hidden">
+                  <Image 
+                    src="/cmr_centro.jpeg" 
+                    alt="Centro de Medicina Regenerativa CMR" 
+                    fill 
+                    className="object-cover" 
+                  />
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
+                Nuestro <span className="font-medium text-cyan-600">Equipo Médico</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
+                Profesionales medicos capacitados dedicados a tu bienestar y recuperación
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+              <div className="text-center">
+                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden bg-gray-200 flex items-center justify-center">
+                  <div className="text-gray-400 text-2xl">👨‍⚕️</div>
+                </div>
+                <h3 className="text-lg font-medium text-gray-900">Dr. Victor Ocasio</h3>
+              </div>
+
+              <div className="text-center">
+                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                  <Image 
+                    src="/dra_nieves.png" 
+                    alt="Dra. Sheila Nieves" 
+                    fill 
+                    className="object-cover" 
+                  />
+                </div>
+                <h3 className="text-lg font-medium text-gray-900">Dra. Sheila Nieves</h3>
+              </div>
+
+              <div className="text-center">
+                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                  <Image 
+                    src="/dra_rosa.png" 
+                    alt="Dra. Christina Rosa" 
+                    fill 
+                    className="object-cover" 
+                  />
+                </div>
+                <h3 className="text-lg font-medium text-gray-900">Dra. Christina Rosa</h3>
+              </div>
+
+              <div className="text-center">
+                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                  <Image 
+                    src="/dra_gonzalez.png" 
+                    alt="Dra. Emma González" 
+                    fill 
+                    className="object-cover" 
+                  />
+                </div>
+                <h3 className="text-lg font-medium text-gray-900">Dra. Emma González</h3>
               </div>
             </div>
           </div>

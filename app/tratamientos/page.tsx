@@ -82,7 +82,7 @@ export default function TratamientosPage() {
     },
     {
       id: 4,
-      title: 'Terapia Disfunción Eréctil',
+      title: 'Terapia de Optimización Masculina',
       shortDescription: 'APEX es una plataforma de radiofrecuencia inteligente no invasiva diseñada para optimizar la vitalidad masculina, fortaleciendo la función vascular y estructural en zonas clave para el rendimiento masculino.',
       fullDescription: 'Mediante el uso de radiofrecuencia bipolar de alta precisión, APEX estimula la angiogénesis (formación de nuevos vasos sanguíneos) y la neocolagénesis (síntesis de nuevo colágeno), mejorando la circulación local y reforzando las estructuras que contribuyen a una vida íntima activa, duradera y saludable. Gracias a su tecnología de control térmico en tiempo real y a su aplicador de tamaño reducido, APEX permite tratar tejidos delicados con máxima seguridad, confort y efectividad, sin recurrir a fármacos ni procedimientos invasivos.',
       benefits: [
@@ -338,8 +338,8 @@ export default function TratamientosPage() {
                             />
                           ) : treatment.id === 4 ? (
                             <Image 
-                              src="/erectile_dysfunction.png" 
-                              alt="Terapia Disfunción Eréctil" 
+                              src="/male_optimization_therapy.png" 
+                              alt="Terapia de Optimización Masculina" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
