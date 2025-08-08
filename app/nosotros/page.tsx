@@ -147,48 +147,74 @@ export default function NosotrosPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden bg-gray-200 flex items-center justify-center">
-                  <div className="text-gray-400 text-2xl">👨‍⚕️</div>
+                        <div className="mb-16">
+              {/* First row - 3 doctors */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 justify-items-center">
+                <div className="text-center">
+                  <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                    <Image 
+                      src="/dr_ocasio.png" 
+                      alt="Dra. Victor Ocasio" 
+                      fill 
+                      className="object-cover" 
+                    />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Dra. Victor Ocasio</h3>
+                  <p className="text-cyan-600 text-sm font-medium">Director Médico</p>
                 </div>
-                <h3 className="text-lg font-medium text-gray-900">Dr. Victor Ocasio</h3>
+
+                <div className="text-center">
+                  <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                    <Image 
+                      src="/dra_nieves.png" 
+                      alt="Dra. Sheila Nieves" 
+                      fill 
+                      className="object-cover" 
+                    />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Dra. Sheila Nieves</h3>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                    <Image 
+                      src="/dra_rosa.png" 
+                      alt="Dra. Christina Rosa" 
+                      fill 
+                      className="object-cover" 
+                    />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Dra. Christina Rosa</h3>
+                </div>
               </div>
 
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
-                  <Image 
-                    src="/dra_nieves.png" 
-                    alt="Dra. Sheila Nieves" 
-                    fill 
-                    className="object-cover" 
-                  />
-                </div>
-                <h3 className="text-lg font-medium text-gray-900">Dra. Sheila Nieves</h3>
-              </div>
+              {/* Second row - 2 doctors centered */}
+              <div className="flex justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md">
+                  <div className="text-center">
+                    <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                      <Image 
+                        src="/dra_gonzalez.png" 
+                        alt="Dra. Emma González" 
+                        fill 
+                        className="object-cover" 
+                      />
+                    </div>
+                    <h3 className="text-lg font-medium text-gray-900">Dra. Emma González</h3>
+                  </div>
 
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
-                  <Image 
-                    src="/dra_rosa.png" 
-                    alt="Dra. Christina Rosa" 
-                    fill 
-                    className="object-cover" 
-                  />
+                  <div className="text-center">
+                    <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                      <Image 
+                        src="/dr_martinez.png" 
+                        alt="Dra. Emmanuel Martinez" 
+                        fill 
+                        className="object-cover" 
+                      />
+                    </div>
+                    <h3 className="text-lg font-medium text-gray-900">Dra. Emmanuel Martinez</h3>
+                  </div>
                 </div>
-                <h3 className="text-lg font-medium text-gray-900">Dra. Christina Rosa</h3>
-              </div>
-
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
-                  <Image 
-                    src="/dra_gonzalez.png" 
-                    alt="Dra. Emma González" 
-                    fill 
-                    className="object-cover" 
-                  />
-                </div>
-                <h3 className="text-lg font-medium text-gray-900">Dra. Emma González</h3>
               </div>
             </div>
           </div>
