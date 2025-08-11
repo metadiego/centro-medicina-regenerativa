@@ -4,8 +4,37 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Mail, Phone, MapPin, ArrowLeft, Calendar } from 'lucide-react';
 import Link from 'next/link';
+import { useEffect, useRef } from 'react';
 
 export default function ContactoPage() {
+  const newsletterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const loadGhostSignupForm = () => {
+      // Check if form is already loaded in this container
+      if (newsletterRef.current && newsletterRef.current.children.length > 0) {
+        return;
+      }
+
+      // Create the Ghost signup form script
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js';
+      script.setAttribute('data-button-color', '#01b3d1');
+      script.setAttribute('data-button-text-color', '#FFFFFF');
+      script.setAttribute('data-site', 'https://blog.centrodemedicinaregenerativa.com/');
+      script.setAttribute('data-locale', 'es');
+      script.async = true;
+
+      // Append to the newsletter container
+      if (newsletterRef.current) {
+        newsletterRef.current.appendChild(script);
+      }
+    };
+
+    // Add a small delay to ensure proper loading
+    const timer = setTimeout(loadGhostSignupForm, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="min-h-screen" style={{backgroundColor: 'rgb(247,247,247)'}}>
@@ -189,6 +218,31 @@ export default function ContactoPage() {
                     </li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Newsletter Subscription */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
+                Suscríbete a nuestro <span className="font-medium text-cyan-600">Blog</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-light mb-12">
+                Recibe contenido exclusivo sobre salud y bienestar directamente en tu correo electrónico
+              </p>
+              <div className="flex justify-center">
+                <div 
+                  ref={newsletterRef}
+                  style={{
+                    minHeight: '58px',
+                    maxWidth: '440px',
+                    margin: '0',
+                    width: '100%'
+                  }}
+                />
               </div>
             </div>
           </div>

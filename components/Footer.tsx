@@ -2,8 +2,38 @@
 
 import Link from 'next/link';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 export default function Footer() {
+  const newsletterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const loadGhostSignupForm = () => {
+      // Check if form is already loaded in this container
+      if (newsletterRef.current && newsletterRef.current.children.length > 0) {
+        return;
+      }
+
+      // Create the Ghost signup form script
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js';
+      script.setAttribute('data-button-color', '#01b3d1');
+      script.setAttribute('data-button-text-color', '#FFFFFF');
+      script.setAttribute('data-site', 'https://blog.centrodemedicinaregenerativa.com/');
+      script.setAttribute('data-locale', 'es');
+      script.async = true;
+
+      // Append to the newsletter container
+      if (newsletterRef.current) {
+        newsletterRef.current.appendChild(script);
+      }
+    };
+
+    // Add a small delay to ensure proper loading
+    const timer = setTimeout(loadGhostSignupForm, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-16">
@@ -19,7 +49,7 @@ export default function Footer() {
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cyan-400" />
                 <div className="text-gray-300">
@@ -32,6 +62,20 @@ export default function Footer() {
                   consulta@centrodemedicinaregenerativa.com
                 </span>
               </div>
+            </div>
+
+            {/* Newsletter Subscription */}
+            <div>
+              <h4 className="text-lg font-semibold text-white mb-4">Suscríbete a nuestro blog</h4>
+              <div 
+                ref={newsletterRef}
+                style={{
+                  minHeight: '58px',
+                  maxWidth: '440px',
+                  margin: '0',
+                  width: '100%'
+                }}
+              />
             </div>
           </div>
 
@@ -58,6 +102,11 @@ export default function Footer() {
                 <Link href="/nosotros" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
                   Nosotros
                 </Link>
+              </li>
+              <li>
+                <a href="https://blog.centrodemedicinaregenerativa.com/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
+                  Blog
+                </a>
               </li>
               <li>
                 <Link href="https://www.tiendacmr.com" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">

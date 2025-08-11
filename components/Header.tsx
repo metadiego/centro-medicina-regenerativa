@@ -50,6 +50,14 @@ export default function Header() {
               Nosotros
             </Link>
             <a
+              href="https://blog.centrodemedicinaregenerativa.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
+            >
+              Blog
+            </a>
+            <a
               href="https://tiendacmr.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -110,6 +118,15 @@ export default function Header() {
               >
                 Nosotros
               </Link>
+              <a
+                href="https://blog.centrodemedicinaregenerativa.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                Blog
+              </a>
               <a
                 href="https://tiendacmr.com/"
                 target="_blank"

@@ -1,8 +1,37 @@
 'use client';
 
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 export default function Contact() {
+  const newsletterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const loadGhostSignupForm = () => {
+      // Check if form is already loaded in this container
+      if (newsletterRef.current && newsletterRef.current.children.length > 0) {
+        return;
+      }
+
+      // Create the Ghost signup form script
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js';
+      script.setAttribute('data-button-color', '#01b3d1');
+      script.setAttribute('data-button-text-color', '#FFFFFF');
+      script.setAttribute('data-site', 'https://blog.centrodemedicinaregenerativa.com/');
+      script.setAttribute('data-locale', 'es');
+      script.async = true;
+
+      // Append to the newsletter container
+      if (newsletterRef.current) {
+        newsletterRef.current.appendChild(script);
+      }
+    };
+
+    // Add a small delay to ensure proper loading
+    const timer = setTimeout(loadGhostSignupForm, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section id="contacto" className="py-24" style={{backgroundColor: 'rgb(247,247,247)'}}>
@@ -108,6 +137,27 @@ export default function Contact() {
               <p className="text-sm text-gray-500 mt-4">
                 Llamada gratuita para consulta inicial
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Newsletter Subscription */}
+        <div className="mt-16 pt-12 border-t border-gray-200">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-light text-gray-900 mb-4">
+              Suscríbete a nuestro <span className="font-medium text-cyan-600">Blog</span>
+            </h3>
+            <p className="text-gray-600 mb-8">Recibe contenido exclusivo sobre salud y bienestar directamente en tu correo</p>
+            <div className="flex justify-center">
+              <div 
+                ref={newsletterRef}
+                style={{
+                  minHeight: '58px',
+                  maxWidth: '440px',
+                  margin: '0',
+                  width: '100%'
+                }}
+              />
             </div>
           </div>
         </div>
