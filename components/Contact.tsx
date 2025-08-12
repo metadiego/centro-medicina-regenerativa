@@ -172,7 +172,7 @@ export default function Contact() {
           </div>
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://wa.me/17877807575" 
+              href="https://wa.me/17877799508" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 p-4 rounded-full transition-colors duration-200 transform hover:scale-105"
