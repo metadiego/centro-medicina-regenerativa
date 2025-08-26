@@ -93,8 +93,10 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 text-base mb-1">Caguas</p>
-                      <p>Centro de Medicina Regenerativa</p>
-                      <p className="text-gray-600">Av. Luis Muñoz Marín<br />Caguas, PR 00725</p>
+                      <p className="text-gray-600">Centro de Medicina Regenerativa</p>
+                      <p className="text-gray-600">Q2 Av. Luis Muñoz Marín</p>
+                      <p className="text-gray-600">Urbanización Mariolga</p>
+                      <p className="text-gray-600">Caguas, PR 00725</p>
                     </div>
                   </div>
                 </div>

@@ -139,14 +139,14 @@ export default function Footer() {
                 <p className="font-medium text-white mb-1">Bayamón</p>
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 text-sm">51 Calle Dr. Santiago Veve, Bayamón, PR 00961</p>
+                  <p className="text-gray-300 text-sm">51 Calle Dr. Santiago Veve<br /> Bayamón, PR 00961</p>
                 </div>
               </div>
               <div>
                 <p className="font-medium text-white mb-1">Caguas</p>
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 text-sm">Av. Luis Muñoz Marín, Caguas, PR 00725</p>
+                  <p className="text-gray-300 text-sm">Q2 Av. Luis Muñoz Marín<br /> Urbanización Mariolga<br /> Caguas, PR 00725</p>
                 </div>
               </div>
             </div>

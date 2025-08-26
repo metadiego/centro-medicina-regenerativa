@@ -104,12 +104,15 @@ export default function ContactoPage() {
                   <div>
                     <p className="font-medium text-gray-700 mb-1">Bayamón</p>
                     <p>Centro de Medicina Regenerativa</p>
-                    <p>51 Calle Dr. Santiago Veve<br />Bayamón, PR 00961</p>
+                    <p>51 Calle Dr. Santiago Veve</p>
+                    <p>Bayamón, PR 00961</p>
                   </div>
                   <div>
                     <p className="font-medium text-gray-700 mb-1">Caguas</p>
                     <p>Centro de Medicina Regenerativa</p>
-                    <p>Av. Luis Muñoz Marín<br />Caguas, PR 00725</p>
+                    <p>Q2 Av. Luis Muñoz Marín</p>
+                    <p>Urbanización Mariolga</p>
+                    <p>Caguas, PR 00725</p>
                   </div>
                 </div>
                 <p className="text-gray-500 text-sm">
