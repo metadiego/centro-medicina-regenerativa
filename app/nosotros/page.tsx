@@ -233,25 +233,6 @@ export default function NosotrosPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
-              <div className="bg-gray-50 rounded-2xl p-8">
-                <div className="text-center mb-6">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 relative overflow-hidden">
-                    <Image 
-                      src="/dr_ovokaitys.png" 
-                      alt="Dr. Todd Ovokaitys" 
-                      fill 
-                      className="object-cover" 
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-2">Dr. Todd Ovokaitys</h3>
-                  <p className="text-cyan-600 text-sm font-medium mb-4">Inventor de la Tecnología de Resonancia Láser de Células Madre</p>
-                </div>
-                <p className="text-gray-600 leading-relaxed font-light text-sm">
-                  Científico, médico e investigador distinguido, reconocido por sus contribuciones innovadoras en enfermedades relacionadas con la edad. 
-                  Inventor de la tecnología SONG que mejora la eficacia de las terapias con células madre. Graduado summa cum laude de Northwestern, 
-                  con formación en Johns Hopkins y Georgetown. Pionero en investigación de células madre embrionarias muy pequeñas (VSELs) con múltiples patentes.
-                </p>
-              </div>
 
               <div className="bg-gray-50 rounded-2xl p-8">
                 <div className="text-center mb-6">

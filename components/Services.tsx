@@ -14,7 +14,7 @@ export default function Services() {
     {
       image: '/stem_cell_therapy.png',
       imageType: 'file',
-      title: 'Terapia de Células Madre',
+      title: 'Terapia Celular Avanzada',
       description: 'Tratamientos regenerativos utilizando células madre para la reparación y regeneración de tejidos dañados.',
       features: ['Medicina regenerativa avanzada', 'Células madre', 'Activación láser de células']
     },

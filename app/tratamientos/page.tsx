@@ -56,8 +56,8 @@ export default function TratamientosPage() {
     {
       id: 2,
       title: 'Terapia Celular Avanzada',
-      shortDescription: 'Tratamiento exclusivo en Puerto Rico, con células madre propias (autólogas)  activadas con luz láser fotoacústica (SONG).',
-      fullDescription: 'Ofrecemos una terapia avanzada con células madre basada en la extracción y activación de VSELs (Very Small Embryonic-Like Stem Cells), células madre propias ultra pequeñas obtenidas de la sangre del paciente. Esta innovadora intervención, aún en fase de desarrollo y fundamentada en los avances del Dr. Todd Ovokaitys, tiene como objetivo principal contrarrestar el deterioro asociado al envejecimiento. La empresa QIGeneration, pionera en esta tecnología, ha recibido la designación de “Enfermedad Pediátrica Rara” por parte de la FDA de los Estados Unidos, lo que reconoce la necesidad urgente de terapias disruptivas para condiciones actualmente desatendidas. Los estudios preliminares indican que esta terapia puede contribuir a revertir parámetros de envejecimiento biológico, según lo demuestra la metodología del reloj epigenético de Horvath.',
+      shortDescription: 'Tratamiento exclusivo en Puerto Rico, con células madre propias (autólogas)',
+      fullDescription: 'Ofrecemos una terapia avanzada con células madre basada en la extracción y activación de VSELs (Very Small Embryonic-Like Stem Cells), células madre propias ultra pequeñas obtenidas de la sangre del paciente. Esta innovadora intervención, aún en fase de desarrollo, tiene como objetivo principal contrarrestar el deterioro asociado al envejecimiento. Los estudios preliminares indican que esta terapia puede contribuir a revertir parámetros de envejecimiento biológico, según lo demuestra la metodología del reloj epigenético de Horvath.',
       benefits: [
         'Rejuvenecimiento celular',
         'Tratamiento de enfermedades resultantes del envejecimiento',
