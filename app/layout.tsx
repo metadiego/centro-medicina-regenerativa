@@ -28,6 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KFMKP9G5B"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-6KFMKP9G5B');
+            `,
+          }}
+        />
         <meta name="facebook-domain-verification" content="xp6jdvrlsl4mwwf1sepr60pb3kybq7" />
       </head>
       <body
