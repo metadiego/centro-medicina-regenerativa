@@ -1,8 +1,11 @@
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CheckCircle, Heart, Target, ArrowLeft, Award, Users, Shield, Zap } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { trackEvent } from '@/lib/utils';
 
 export default function NosotrosPage() {
   const keyPoints = [
@@ -448,8 +451,12 @@ export default function NosotrosPage() {
             <p className="text-xl text-gray-600 mb-8 font-light">
               Nuestro equipo está listo para diseñar un plan de tratamiento personalizado para ti
             </p>
-            <Link 
-              href="/contacto" 
+            <Link
+              href="/#contacto"
+              onClick={() => trackEvent('book_consultation', {
+                page_location: '/nosotros',
+                button_location: 'call_to_action'
+              })}
               className="inline-flex items-center justify-center px-12 py-4 text-lg font-medium text-white bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Contacta con Nosotros

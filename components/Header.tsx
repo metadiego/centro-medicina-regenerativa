@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { trackEvent } from '@/lib/utils';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,6 +54,9 @@ export default function Header() {
               href="https://blog.centrodemedicinaregenerativa.com/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent('blog_opened', {
+                link_location: 'header_desktop'
+              })}
               className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
             >
               Blog
@@ -61,6 +65,9 @@ export default function Header() {
               href="https://tiendacmr.com/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent('store_opened', {
+                link_location: 'header_desktop'
+              })}
               className="text-gray-700 hover:text-cyan-600 transition-colors duration-300 font-medium tracking-wide text-sm uppercase"
             >
               Nuestra Tienda
@@ -122,7 +129,12 @@ export default function Header() {
                 href="https://blog.centrodemedicinaregenerativa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  trackEvent('blog_opened', {
+                    link_location: 'header_mobile'
+                  });
+                  setIsMenuOpen(false);
+                }}
                 className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
               >
                 Blog
@@ -131,7 +143,12 @@ export default function Header() {
                 href="https://tiendacmr.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  trackEvent('store_opened', {
+                    link_location: 'header_mobile'
+                  });
+                  setIsMenuOpen(false);
+                }}
                 className="block w-full text-left px-3 py-3 text-gray-700 hover:text-cyan-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
               >
                 Nuestra Tienda

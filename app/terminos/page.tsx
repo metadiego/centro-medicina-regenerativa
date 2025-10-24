@@ -498,7 +498,7 @@ export default function TerminosPage() {
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-cyan-600 mr-3" />
                     <span className="text-gray-700 break-all">
-                      <strong>Email:</strong> consulta@centrodemedicinaregenerativa.com
+                      <strong>Email:</strong> atencion@centrodemedicinaregenerativa.com
                     </span>
                   </div>
                 </div>
@@ -618,7 +618,7 @@ export default function TerminosPage() {
                     <div className="flex items-center justify-center">
                       <Mail className="w-5 h-5 text-cyan-600 mr-3" />
                       <span className="text-gray-700 break-all">
-                        consulta@centrodemedicinaregenerativa.com
+                        atencion@centrodemedicinaregenerativa.com
                       </span>
                     </div>
                     <div className="flex items-center justify-center">

@@ -1,7 +1,13 @@
 'use client';
 
+import { trackEvent } from '@/lib/utils';
+
 export default function Hero() {
   const scrollToContact = () => {
+    trackEvent('book_consultation', {
+      page_location: '/',
+      button_location: 'hero_section'
+    });
     const element = document.getElementById('contacto');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

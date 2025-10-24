@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Mail, Phone, MapPin, ArrowLeft, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
+import { trackEvent } from '@/lib/utils';
 
 export default function ContactoPage() {
   const newsletterRef = useRef<HTMLDivElement>(null);
@@ -165,6 +166,10 @@ export default function ContactoPage() {
                   <div>
                     <a
                       href="tel:+17877807575"
+                      onClick={() => trackEvent('call_now', {
+                        page_location: '/contacto',
+                        button_location: 'call_to_action'
+                      })}
                       className="inline-flex items-center justify-center px-16 py-5 text-2xl font-semibold text-white bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 mb-6"
                     >
                       <Phone className="w-8 h-8 mr-4" />

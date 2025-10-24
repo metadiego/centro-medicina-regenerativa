@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon-32x32.png',
   },
+  other: {
+    'facebook-domain-verification': 'xp6jdvrlsl4mwwf1sepr60pb3kybq7'
+  }
 };
 
 export default function RootLayout({
@@ -27,23 +31,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KFMKP9G5B"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-6KFMKP9G5B');
-            `,
-          }}
-        />
-        <meta name="facebook-domain-verification" content="xp6jdvrlsl4mwwf1sepr60pb3kybq7" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6KFMKP9G5B"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6KFMKP9G5B');
+          `}
+        </Script>
         {children}
       </body>
     </html>

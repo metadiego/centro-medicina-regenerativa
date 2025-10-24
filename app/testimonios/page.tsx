@@ -1,7 +1,10 @@
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Star, Quote, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import { trackEvent } from '@/lib/utils';
 
 export default function TestimoniosPage() {
   const testimonials = [
@@ -277,8 +280,12 @@ export default function TestimoniosPage() {
             <p className="text-xl text-gray-600 mb-8 font-light">
               Únete a los miles de pacientes que han transformado su salud con CMR
             </p>
-            <Link 
-              href="/contacto" 
+            <Link
+              href="/#contacto"
+              onClick={() => trackEvent('book_consultation', {
+                page_location: '/testimonios',
+                button_location: 'call_to_action'
+              })}
               className="inline-flex items-center justify-center px-12 py-4 text-lg font-medium text-white bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Agenda tu Consulta
