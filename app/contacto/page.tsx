@@ -88,7 +88,7 @@ export default function ContactoPage() {
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-3">Email</h3>
                 <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-4 break-all px-2">
-                  consulta@centrodemedicinaregenerativa.com
+                  atencion@centrodemedicinaregenerativa.com
                 </p>
                 <p className="text-gray-500 text-sm">
                   Escríbenos para consultas detalladas o información adicional
