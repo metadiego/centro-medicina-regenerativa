@@ -178,7 +178,7 @@ export default function Contact() {
           </div>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://wa.me/17877799508"
+              href="https://wa.me/17869813308"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackEvent('social_media_clicked', {
