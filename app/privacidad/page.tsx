@@ -67,6 +67,9 @@ export default function PrivacidadPage() {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
                 Centro de Medicina Regenerativa
               </p>
+              <p className="text-lg text-gray-500 mt-1">
+                Medicina Sistemica LLC
+              </p>
               <p className="text-lg text-gray-500 mt-2">
                 {language === 'es' ? 'Última actualización: Abril 22, 2025' : 'Last updated: April 22, 2025'}
               </p>
@@ -91,9 +94,9 @@ export default function PrivacidadPage() {
                 </div>
                 <p className="text-gray-700 leading-relaxed">
                   {language === 'es' ? (
-                    'En el Centro de Medicina Regenerativa, nos comprometemos a proteger su información personal y respetar su privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos, protegemos y tratamos su información personal.'
+                    'En Medicina Sistemica LLC, operando como Centro de Medicina Regenerativa, nos comprometemos a proteger su información personal y respetar su privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos, protegemos y tratamos su información personal.'
                   ) : (
-                    'At Centro de Medicina Regenerativa, we are committed to protecting your personal information and respecting your privacy. This Privacy Policy explains how we collect, use, protect, and handle your personal information.'
+                    'At Medicina Sistemica LLC, operating as Centro de Medicina Regenerativa, we are committed to protecting your personal information and respecting your privacy. This Privacy Policy explains how we collect, use, protect, and handle your personal information.'
                   )}
                 </p>
               </div>
@@ -639,7 +642,8 @@ export default function PrivacidadPage() {
                   {language === 'es' ? 'Para preguntas sobre esta Política de Privacidad:' : 'For questions about this Privacy Policy:'}
                 </p>
                 <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-2xl">
-                  <h3 className="text-xl font-medium text-gray-900 mb-6 text-center">Centro de Medicina Regenerativa</h3>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2 text-center">Centro de Medicina Regenerativa</h3>
+                  <p className="text-gray-600 text-center mb-6">Medicina Sistemica LLC</p>
                   <div className="grid md:grid-cols-1 gap-4 max-w-md mx-auto">
                     <div className="flex items-center justify-center">
                       <Mail className="w-5 h-5 text-cyan-600 mr-3" />

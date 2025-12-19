@@ -41,9 +41,10 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-semibold text-white mb-6">
+            <h3 className="text-2xl font-semibold text-white mb-2">
               Centro de Medicina Regenerativa
             </h3>
+            <p className="text-gray-400 text-sm mb-6">Medicina Sistemica LLC</p>
             <p className="text-gray-300 leading-relaxed mb-6 font-light">
               Transformamos vidas a través de tratamientos innovadores en medicina regenerativa, 
               combinando tecnología de vanguardia con un enfoque integral para tu bienestar.
@@ -239,7 +240,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-8 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Centro de Medicina Regenerativa. Todos los derechos reservados.
+              © {new Date().getFullYear()} Medicina Sistemica LLC. Todos los derechos reservados.
             </p>
             <p className="text-gray-400 text-sm">
               Medicina regenerativa de vanguardia en Puerto Rico

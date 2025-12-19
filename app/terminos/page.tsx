@@ -68,6 +68,9 @@ export default function TerminosPage() {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
                 Centro de Medicina Regenerativa
               </p>
+              <p className="text-lg text-gray-500 mt-1">
+                Medicina Sistemica LLC
+              </p>
               <p className="text-lg text-gray-500 mt-2">
                 {language === 'es' ? 'Última actualización: 23 de abril de 2025' : 'Last updated: April 23, 2025'}
               </p>
@@ -613,7 +616,8 @@ export default function TerminosPage() {
                   {language === 'es' ? 'Para consultas sobre estos términos o sobre el tratamiento de datos personales:' : 'For inquiries about these terms or personal data processing:'}
                 </p>
                 <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-2xl">
-                  <h3 className="text-xl font-medium text-gray-900 mb-6 text-center">Centro de Medicina Regenerativa</h3>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2 text-center">Centro de Medicina Regenerativa</h3>
+                  <p className="text-gray-600 text-center mb-6">Medicina Sistemica LLC</p>
                   <div className="grid md:grid-cols-1 gap-4 max-w-md mx-auto">
                     <div className="flex items-center justify-center">
                       <Mail className="w-5 h-5 text-cyan-600 mr-3" />
@@ -681,9 +685,9 @@ export default function TerminosPage() {
                 </h3>
                 <p className="text-lg font-light leading-relaxed text-gray-700">
                   {language === 'es' ? (
-                    'Estos Términos y Condiciones forman parte integral del contrato entre usted y centrodemedicinaregenerativa.com. Al utilizar nuestros servicios, acepta cumplir con todas las disposiciones aquí establecidas.'
+                    'Estos Términos y Condiciones forman parte integral del contrato entre usted y Medicina Sistemica LLC (Centro de Medicina Regenerativa). Al utilizar nuestros servicios, acepta cumplir con todas las disposiciones aquí establecidas.'
                   ) : (
-                    'These Terms and Conditions form an integral part of the contract between you and centrodemedicinaregenerativa.com. By using our services, you agree to comply with all provisions set forth herein.'
+                    'These Terms and Conditions form an integral part of the contract between you and Medicina Sistemica LLC (Centro de Medicina Regenerativa). By using our services, you agree to comply with all provisions set forth herein.'
                   )}
                 </p>
               </div>
