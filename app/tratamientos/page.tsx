@@ -55,6 +55,19 @@ export default function TratamientosPage() {
       category: 'Dolor y Recuperación'
     },
     {
+      id: 10,
+      title: 'Programa de Pérdida de Peso Supervisado',
+      shortDescription: 'Programa médico integral para el manejo del peso corporal con agonistas de GLP-1, supervisado por profesionales de la salud.',
+      fullDescription: 'Programa de pérdida de peso medicamente supervisado que utiliza medicamentos agonistas del receptor GLP-1, en pacientes que cualifican clínicamente. Cada paciente recibe una evaluación médica completa, un plan personalizado con orientación nutricional y seguimiento continuo. Los resultados pueden variar según cada individuo.',
+      benefits: [
+        'Evaluación médica completa previa al tratamiento',
+        'Seguimiento médico continuo durante todo el programa',
+        'Orientación nutricional complementaria',
+        'Enfoque integral que va más allá de la medicación',
+      ],
+      category: 'Manejo de Peso'
+    },
+    {
       id: 2,
       title: 'Terapia Celular Avanzada',
       shortDescription: 'Tratamiento exclusivo en Puerto Rico, con células madre propias (autólogas)',
@@ -66,6 +79,19 @@ export default function TratamientosPage() {
         'Tratamiento no invasivo de vanguardia'
       ],
       category: 'Medicina Regenerativa'
+    },
+    {
+      id: 11,
+      title: 'Terapia Avanzada con Péptidos',
+      shortDescription: 'Protocolos terapéuticos con péptidos bioactivos dirigidos a la regeneración muscular, la recuperación física y el manejo del dolor.',
+      fullDescription: 'Utilizamos péptidos bioactivos bajo supervisión médica para apoyar la regeneración muscular, la recuperación de tejidos y el manejo del dolor crónico. Cada protocolo es diseñado individualmente tras una evaluación clínica, garantizando un enfoque seguro y adaptado a las necesidades de cada paciente. Los resultados pueden variar según cada individuo.',
+      benefits: [
+        'Protocolos personalizados bajo supervisión médica',
+        'Apoyo a la regeneración muscular y de tejidos',
+        'Manejo complementario del dolor crónico',
+        'Recuperación acelerada post-actividad física o lesiones',
+      ],
+      category: 'Regeneración y Recuperación'
     },
     {
       id: 3,
@@ -373,11 +399,25 @@ export default function TratamientosPage() {
                               className="object-cover rounded-2xl" 
                             />
                           ) : treatment.id === 9 ? (
-                            <Image 
-                              src="/terapia_circulatoria.png" 
-                              alt="Terapia Circulatoria AVACEN" 
-                              fill 
-                              className="object-cover rounded-2xl" 
+                            <Image
+                              src="/terapia_circulatoria.png"
+                              alt="Terapia Circulatoria AVACEN"
+                              fill
+                              className="object-cover rounded-2xl"
+                            />
+                          ) : treatment.id === 10 ? (
+                            <Image
+                              src="/weight_loss.png"
+                              alt="Programa de Pérdida de Peso Supervisado"
+                              fill
+                              className="object-cover object-top rounded-2xl"
+                            />
+                          ) : treatment.id === 11 ? (
+                            <Image
+                              src="/peptide_treatments.png"
+                              alt="Terapia Avanzada con Péptidos"
+                              fill
+                              className="object-cover rounded-2xl"
                             />
                           ) : (
                             <div className="text-center text-gray-400">
