@@ -71,7 +71,7 @@ export default function PrivacidadPage() {
                 Medicina Sistemica LLC
               </p>
               <p className="text-lg text-gray-500 mt-2">
-                {language === 'es' ? 'Última actualización: Abril 22, 2025' : 'Last updated: April 22, 2025'}
+                {language === 'es' ? 'Última actualización: Mayo 7, 2026' : 'Last updated: May 7, 2026'}
               </p>
             </div>
           </div>
@@ -487,6 +487,19 @@ export default function PrivacidadPage() {
                       <span>Opción de darse de baja en cada comunicación</span>
                     </li>
                   </ul>
+                </div>
+
+                <div className="mt-6">
+                  <h3 className="text-xl font-medium text-gray-800 mb-4">
+                    {language === 'es' ? '11.3 Comunicaciones vía SMS' : '11.3 SMS Communications'}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    {language === 'es' ? (
+                      'La información de teléfonos móviles y el consentimiento de SMS recopilados a través de nuestros formularios NO serán compartidos, vendidos ni divulgados con terceros para fines de marketing. Los datos solo se utilizan para las comunicaciones autorizadas por el usuario. Para cancelar la suscripción, responda STOP a cualquier mensaje. Para obtener ayuda, responda HELP.'
+                    ) : (
+                      'The mobile phone information and SMS consent collected through our forms will NOT be shared, sold, or disclosed to third parties for marketing purposes. The data is used only for the communications authorized by the user. To unsubscribe, reply STOP to any message. For help, reply HELP.'
+                    )}
+                  </p>
                 </div>
               </div>
 
