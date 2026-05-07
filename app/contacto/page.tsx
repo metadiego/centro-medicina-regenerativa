@@ -2,6 +2,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 import { Mail, Phone, MapPin, ArrowLeft, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
@@ -231,8 +232,15 @@ export default function ContactoPage() {
           </div>
         </section>
 
-        {/* Newsletter Subscription */}
+        {/* Contact Form */}
         <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+            <ContactForm />
+          </div>
+        </section>
+
+        {/* Newsletter Subscription */}
+        <section className="py-16" style={{backgroundColor: 'rgb(247,247,247)'}}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
