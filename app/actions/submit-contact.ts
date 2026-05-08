@@ -73,7 +73,6 @@ export async function submitContact(
       to: recipient,
       from,
       fromName,
-      replyTo: input.email.trim(),
       subject,
       html,
       text,

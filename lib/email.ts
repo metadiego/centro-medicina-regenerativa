@@ -2,7 +2,6 @@ type SendEmailParams = {
   to: string;
   from: string;
   fromName?: string;
-  replyTo?: string;
   subject: string;
   html: string;
   text?: string;
@@ -15,7 +14,6 @@ type TwilioEmailBody = {
     subject: string;
     html: string;
     text?: string;
-    headers?: Record<string, string>;
   };
 };
 
@@ -42,9 +40,6 @@ export async function sendEmail(params: SendEmailParams): Promise<void> {
   }
   if (params.text) {
     body.content.text = params.text;
-  }
-  if (params.replyTo) {
-    body.content.headers = { 'Reply-To': params.replyTo };
   }
 
   console.log('[email] sending to Twilio', {
