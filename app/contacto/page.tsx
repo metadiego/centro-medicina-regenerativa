@@ -199,28 +199,6 @@ export default function ContactoPage() {
                   </div>
                 </div>
 
-                {/* Why Choose Us */}
-                <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl p-8 text-white">
-                  <h3 className="text-xl font-medium mb-4">¿Por qué elegir CMR?</h3>
-                  <ul className="space-y-3 text-cyan-100 text-sm">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Especialistas certificados en medicina regenerativa
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Tecnología de vanguardia y tratamientos innovadores
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Atención personalizada y planes de tratamiento únicos
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Resultados comprobados y satisfacción del paciente
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
