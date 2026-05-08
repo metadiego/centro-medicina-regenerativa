@@ -1,19 +1,20 @@
 type SendEmailParams = {
   to: string;
   from: string;
+  fromName?: string;
   replyTo?: string;
   subject: string;
   html: string;
-  text: string;
+  text?: string;
 };
 
 type TwilioEmailBody = {
-  from: { address: string };
+  from: { address: string; name?: string };
   to: { address: string }[];
   content: {
     subject: string;
     html: string;
-    text: string;
+    text?: string;
     headers?: Record<string, string>;
   };
 };
@@ -33,13 +34,25 @@ export async function sendEmail(params: SendEmailParams): Promise<void> {
     content: {
       subject: params.subject,
       html: params.html,
-      text: params.text,
     },
   };
 
+  if (params.fromName) {
+    body.from.name = params.fromName;
+  }
+  if (params.text) {
+    body.content.text = params.text;
+  }
   if (params.replyTo) {
     body.content.headers = { 'Reply-To': params.replyTo };
   }
+
+  console.log('[email] sending to Twilio', {
+    endpoint: 'https://comms.twilio.com/v1/Emails',
+    from: body.from,
+    to: body.to,
+    subject: body.content.subject,
+  });
 
   const response = await fetch('https://comms.twilio.com/v1/Emails', {
     method: 'POST',
@@ -50,8 +63,18 @@ export async function sendEmail(params: SendEmailParams): Promise<void> {
     body: JSON.stringify(body),
   });
 
+  const responseText = await response.text();
+
   if (!response.ok) {
-    const errorBody = await response.text();
-    throw new Error(`Twilio email send failed: ${response.status} ${errorBody}`);
+    console.error('[email] Twilio rejected send', {
+      status: response.status,
+      body: responseText,
+    });
+    throw new Error(`Twilio email send failed: ${response.status} ${responseText}`);
   }
+
+  console.log('[email] Twilio accepted send', {
+    status: response.status,
+    body: responseText,
+  });
 }

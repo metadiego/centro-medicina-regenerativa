@@ -50,6 +50,7 @@ export async function submitContact(
 
   const recipient = process.env.CONTACT_RECIPIENT_EMAIL;
   const from = process.env.CONTACT_FROM_EMAIL;
+  const fromName = process.env.CONTACT_FROM_NAME;
   if (!recipient || !from) {
     console.error('Missing CONTACT_RECIPIENT_EMAIL or CONTACT_FROM_EMAIL env var');
     return { ok: false, error: 'send_failed' };
@@ -71,6 +72,7 @@ export async function submitContact(
     await sendEmail({
       to: recipient,
       from,
+      fromName,
       replyTo: input.email.trim(),
       subject,
       html,
