@@ -19,13 +19,13 @@ type TwilioEmailBody = {
 };
 
 export async function sendEmail(params: SendEmailParams): Promise<void> {
-  const sid = process.env.TWILIO_API_KEY_SID;
-  const secret = process.env.TWILIO_API_KEY_SECRET;
-  if (!sid || !secret) {
-    throw new Error('TWILIO_API_KEY_SID or TWILIO_API_KEY_SECRET is not set');
+  const username = process.env.TWILIO_ACCOUNT_SID;
+  const password = process.env.TWILIO_AUTH_TOKEN;
+  if (!username || !password) {
+    throw new Error('TWILIO_ACCOUNT_SID or TWILIO_AUTH_TOKEN is not set');
   }
 
-  const auth = Buffer.from(`${sid}:${secret}`).toString('base64');
+  const auth = Buffer.from(`${username}:${password}`).toString('base64');
 
   const body: TwilioEmailBody = {
     from: { address: params.from },
