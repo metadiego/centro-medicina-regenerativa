@@ -2,7 +2,7 @@
 
 import { headers } from 'next/headers';
 import { checkRateLimit } from '@/lib/rate-limit';
-import { sendEmail } from '@/lib/sendgrid';
+import { sendEmail } from '@/lib/email';
 import { buildContactEmail, type ContactSubmission } from '@/lib/contact-email';
 
 export type SubmitResult =
