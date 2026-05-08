@@ -128,64 +128,58 @@ export default function ContactoPage() {
         {/* Contact Form & Hours */}
         <section className="py-16" style={{backgroundColor: 'rgb(247,247,247)'}}>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <div className="grid lg:grid-cols-3 gap-16">
-              {/* Call to Action */}
+            <div className="grid lg:grid-cols-3 gap-10 items-start">
+              {/* Contact Form */}
               <div className="lg:col-span-2">
-                <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-100 text-center h-full flex flex-col justify-center">
-                  <div className="mb-8">
-                    <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-7 rounded-full shadow-lg mx-auto w-fit mb-8">
-                      <Phone className="w-14 h-14 text-white" />
-                    </div>
-                    <h2 className="text-4xl font-medium text-gray-900 mb-6">
-                      ¿Listo para tu consulta?
-                    </h2>
-                  </div>
-                  
-                  <div className="space-y-8 mb-10">
-                    <div className="flex items-center justify-center space-x-5 text-gray-700">
-                      <Phone className="w-7 h-7 text-cyan-600" />
-                      <div className="text-2xl font-medium">
-                        <div>+1 (787) 780-7575</div>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-cyan-50 rounded-xl p-6 max-w-md mx-auto">
-                      <h3 className="text-lg font-medium text-gray-900 mb-4">Horarios de Atención</h3>
-                      <div className="space-y-2 text-gray-600">
-                        <div className="flex justify-between">
-                          <span>Lunes - Sabado</span>
-                          <span className="font-medium">7:00 AM - 5:00 PM</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Domingos</span>
-                          <span className="font-medium">Cerrado</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <a
-                      href="tel:+17877807575"
-                      onClick={() => trackEvent('call_now', {
-                        page_location: '/contacto',
-                        button_location: 'call_to_action'
-                      })}
-                      className="inline-flex items-center justify-center px-16 py-5 text-2xl font-semibold text-white bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 mb-6"
-                    >
-                      <Phone className="w-8 h-8 mr-4" />
-                      <span>Llama Ahora</span>
-                    </a>
-                    
-                    <p className="text-base text-gray-500">
-                      Consulta inicial gratuita • Atención personalizada • Citas el mismo día
-                    </p>
-                  </div>
-                </div>
+                <ContactForm />
               </div>
 
-              {/* Additional Info */}
-              <div className="space-y-8">
+              {/* Sidebar */}
+              <div className="space-y-6">
+                {/* Condensed Call CTA */}
+                <div className="bg-white rounded-2xl shadow-lg p-8 text-center border border-gray-100">
+                  <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-4">
+                    <Phone className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">
+                    ¿Prefieres llamar?
+                  </h3>
+                  <a
+                    href="tel:+17877807575"
+                    onClick={() => trackEvent('call_now', {
+                      page_location: '/contacto',
+                      button_location: 'sidebar_cta'
+                    })}
+                    className="block text-2xl font-semibold text-cyan-600 hover:text-cyan-700 transition-colors mb-4"
+                  >
+                    +1 (787) 780-7575
+                  </a>
+                  <div className="bg-cyan-50 rounded-xl p-4 mb-5 text-left">
+                    <h4 className="text-sm font-medium text-gray-900 mb-2 text-center">Horarios</h4>
+                    <div className="space-y-1 text-sm text-gray-600">
+                      <div className="flex justify-between">
+                        <span>Lunes - Sabado</span>
+                        <span className="font-medium">7AM - 5PM</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Domingos</span>
+                        <span className="font-medium">Cerrado</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="tel:+17877807575"
+                    onClick={() => trackEvent('call_now', {
+                      page_location: '/contacto',
+                      button_location: 'sidebar_cta_button'
+                    })}
+                    className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    <span>Llama Ahora</span>
+                  </a>
+                </div>
+
                 {/* Appointment Info */}
                 <div className="bg-white rounded-2xl p-8 shadow-lg">
                   <div className="flex items-center mb-6">
@@ -232,15 +226,8 @@ export default function ContactoPage() {
           </div>
         </section>
 
-        {/* Contact Form */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-            <ContactForm />
-          </div>
-        </section>
-
         {/* Newsletter Subscription */}
-        <section className="py-16" style={{backgroundColor: 'rgb(247,247,247)'}}>
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
