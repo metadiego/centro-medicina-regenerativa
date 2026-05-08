@@ -67,33 +67,41 @@ export default function ContactoPage() {
         {/* Contact Information */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <div className="grid lg:grid-cols-3 gap-12">
-              {/* Phone */}
-              <div className="text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
-                <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
-                  <Phone className="w-8 h-8 text-white" />
+            <div className="grid lg:grid-cols-3 gap-8 items-start">
+              {/* Phone + Email */}
+              <div className="p-8 bg-gray-50 rounded-2xl shadow-lg">
+                <div className="text-center mb-6">
+                  <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit">
+                    <Phone className="w-8 h-8 text-white" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-3">Teléfono</h3>
-                <div className="text-gray-600 text-lg mb-4">
-                  <div>+1 (787) 780-7575</div>
+                <div className="text-center mb-8">
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Teléfono</h3>
+                  <a
+                    href="tel:+17877807575"
+                    className="text-gray-700 text-lg hover:text-cyan-600 transition-colors"
+                  >
+                    +1 (787) 780-7575
+                  </a>
+                  <p className="text-gray-500 text-sm mt-2">
+                    Llámanos para agendar tu cita o resolver cualquier duda
+                  </p>
                 </div>
-                <p className="text-gray-500 text-sm">
-                  Llámanos para agendar tu cita o resolver cualquier duda
-                </p>
-              </div>
-
-              {/* Email */}
-              <div className="text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
-                <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
-                  <Mail className="w-8 h-8 text-white" />
+                <div className="border-t border-gray-200 pt-6 text-center">
+                  <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 p-4 rounded-2xl shadow-lg mx-auto w-fit mb-6">
+                    <Mail className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">Email</h3>
+                  <a
+                    href="mailto:atencion@centrodemedicinaregenerativa.com"
+                    className="text-gray-700 text-sm sm:text-base break-all hover:text-cyan-600 transition-colors"
+                  >
+                    atencion@centrodemedicinaregenerativa.com
+                  </a>
+                  <p className="text-gray-500 text-sm mt-2">
+                    Escríbenos para consultas detalladas o información adicional
+                  </p>
                 </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-3">Email</h3>
-                <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-4 break-all px-2">
-                  atencion@centrodemedicinaregenerativa.com
-                </p>
-                <p className="text-gray-500 text-sm">
-                  Escríbenos para consultas detalladas o información adicional
-                </p>
               </div>
 
               {/* Location */}
@@ -121,6 +129,9 @@ export default function ContactoPage() {
                   Visítanos en cualquiera de nuestras modernas instalaciones
                 </p>
               </div>
+
+              {/* Contact Form */}
+              <ContactForm />
             </div>
           </div>
         </section>
@@ -232,15 +243,8 @@ export default function ContactoPage() {
           </div>
         </section>
 
-        {/* Contact Form */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-            <ContactForm />
-          </div>
-        </section>
-
         {/* Newsletter Subscription */}
-        <section className="py-16" style={{backgroundColor: 'rgb(247,247,247)'}}>
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
