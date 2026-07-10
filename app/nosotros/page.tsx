@@ -191,32 +191,18 @@ export default function NosotrosPage() {
                 </div>
               </div>
 
-              {/* Second row - 2 doctors centered */}
+              {/* Second row - 1 doctor centered */}
               <div className="flex justify-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md">
-                  <div className="text-center">
-                    <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
-                      <Image 
-                        src="/dra_gonzalez.png" 
-                        alt="Dra. Emma González" 
-                        fill 
-                        className="object-cover" 
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900">Dra. Emma González</h3>
+                <div className="text-center">
+                  <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
+                    <Image
+                      src="/dr_martinez.png"
+                      alt="Dra. Emmanuel Martinez"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-
-                  <div className="text-center">
-                    <div className="w-24 h-24 rounded-full mx-auto mb-3 relative overflow-hidden">
-                      <Image 
-                        src="/dr_martinez.png" 
-                        alt="Dra. Emmanuel Martinez" 
-                        fill 
-                        className="object-cover" 
-                      />
-                    </div>
-                    <h3 className="text-lg font-medium text-gray-900">Dra. Emmanuel Martinez</h3>
-                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Dra. Emmanuel Martinez</h3>
                 </div>
               </div>
             </div>
