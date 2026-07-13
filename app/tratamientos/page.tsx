@@ -41,7 +41,7 @@ export default function TratamientosPage() {
     },
     {
       id: 1,
-      title: 'Terapia de Dolor y Recuperación',
+      title: 'Terapia Laser de Dolor',
       shortDescription: 'Ofrecemos Terapia MLS (Sistema Multionda Sincronizado) y Terapia HILT (High-Intensity Laser Therapy) para lograr una máxima eficacia terapéutica en el alivio del dolor y la recuperación.',
       fullDescription: 'Somos el centro más avanzado en el tratamiento de dolor y recuperación en Puerto Rico. Tanto el láser MLS como el láser HILT actúan en conjunto para proporcionar calentamiento tópico con el fin de elevar la temperatura del tejido, aliviar el dolor y la rigidez muscular y articular, el dolor de artritis o el espasmo muscular, el aumento temporal de la circulación sanguínea local y promover la relajación muscular. Juntas, estas tecnologías proporcionan un tratamiento integral único que combina alivio inmediato con curación a largo plazo.',
       benefits: [
@@ -51,6 +51,32 @@ export default function TratamientosPage() {
         'Acelera la regeneración celular',
         'Mejora de la circulación sanguínea local',
         'Mejora de funcionamiento metabolico y nervioso',
+      ],
+      category: 'Dolor y Recuperación'
+    },
+    {
+      id: 13,
+      title: 'Terapia de Ondas de Choque Extracorpóreas (ESWT)',
+      shortDescription: 'Ondas acústicas de alta energía que activan los mecanismos naturales de reparación del cuerpo, alivian el dolor y aceleran la recuperación de lesiones.',
+      fullDescription: 'La Terapia de Ondas de Choque Extracorpóreas (ESWT) aplica pulsos acústicos de alta energía sobre el tejido lesionado para provocar una respuesta biológica que favorece la reparación natural del organismo. Estas ondas estimulan la formación de nuevos vasos sanguíneos, promueven la liberación de factores de crecimiento y modulan las terminaciones nerviosas responsables del dolor, acelerando la regeneración de tendones, músculos, ligamentos y hueso. Es una terapia ampliamente respaldada para el tratamiento de lesiones crónicas y deportivas.',
+      benefits: [
+        'Reduce el dolor y la inflamación',
+        'Estimula la regeneración de tendones y tejidos blandos',
+        'Acelera la recuperación de lesiones deportivas',
+        'Evita o retrasa la necesidad de tratamientos más invasivos',
+      ],
+      category: 'Dolor y Recuperación'
+    },
+    {
+      id: 12,
+      title: 'Terapia de Magnetotransducción Extracorpórea (EMTT®)',
+      shortDescription: 'Pulsos electromagnéticos de alta intensidad que estimulan la reparación natural de los tejidos, reducen la inflamación y alivian el dolor.',
+      fullDescription: 'La Terapia de Magnetotransducción Extracorpórea (EMTT®) emplea campos electromagnéticos de alta frecuencia e intensidad que penetran profundamente en los tejidos para estimular la actividad bioeléctrica de las células. Esta estimulación favorece la producción de energía celular, ayuda a regular los procesos inflamatorios y activa los mecanismos naturales de reparación y regeneración de músculos, tendones, ligamentos, hueso y articulaciones, disminuyendo el dolor de forma no invasiva y sin requerir tiempo de recuperación.',
+      benefits: [
+        'Reduce la inflamación y el dolor',
+        'Estimula la reparación y regeneración de los tejidos',
+        'Favorece la recuperación de tendones, músculos, ligamentos y hueso',
+        'No requiere anestesia ni tiempo de recuperación',
       ],
       category: 'Dolor y Recuperación'
     },
@@ -269,6 +295,10 @@ export default function TratamientosPage() {
                             <h4 className="font-semibold text-white mb-4 text-lg">Especialidades Principales:</h4>
                             <div className="grid grid-cols-2 gap-3 text-sm">
                               <div className="bg-white/10 rounded-lg p-3 backdrop-blur">
+                                <div className="font-medium mb-1">Manejo de Dolor</div>
+                                <div className="text-cyan-100 text-xs">Dolor crónico y recuperación</div>
+                              </div>
+                              <div className="bg-white/10 rounded-lg p-3 backdrop-blur">
                                 <div className="font-medium mb-1">Sistema Músculo-Esquelético</div>
                                 <div className="text-cyan-100 text-xs">Artritis, tendinitis, lesiones articulares</div>
                               </div>
@@ -279,10 +309,6 @@ export default function TratamientosPage() {
                               <div className="bg-white/10 rounded-lg p-3 backdrop-blur">
                                 <div className="font-medium mb-1">Anti-envejecimiento</div>
                                 <div className="text-cyan-100 text-xs">Revitalización celular</div>
-                              </div>
-                              <div className="bg-white/10 rounded-lg p-3 backdrop-blur">
-                                <div className="font-medium mb-1">Bienestar Integral</div>
-                                <div className="text-cyan-100 text-xs">Salud preventiva</div>
                               </div>
                             </div>
                           </div>
@@ -345,7 +371,7 @@ export default function TratamientosPage() {
                           {treatment.id === 1 ? (
                             <Image 
                               src="/mls_therapy.png" 
-                              alt="Terapia de Dolor y Recuperación MLS" 
+                              alt="Terapia Laser de Dolor MLS" 
                               fill 
                               className="object-cover rounded-2xl" 
                             />
@@ -411,6 +437,20 @@ export default function TratamientosPage() {
                               alt="Programa de Pérdida de Peso Supervisado"
                               fill
                               className="object-cover object-top rounded-2xl"
+                            />
+                          ) : treatment.id === 13 ? (
+                            <Image
+                              src="/eswt_therapy.png"
+                              alt="Terapia de Ondas de Choque Extracorpóreas (ESWT)"
+                              fill
+                              className="object-cover rounded-2xl"
+                            />
+                          ) : treatment.id === 12 ? (
+                            <Image
+                              src="/emtt_therapy.png"
+                              alt="Terapia de Magnetotransducción Extracorpórea (EMTT®)"
+                              fill
+                              className="object-cover rounded-2xl"
                             />
                           ) : treatment.id === 11 ? (
                             <Image
